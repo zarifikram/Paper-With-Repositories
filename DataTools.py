@@ -18,7 +18,7 @@ class DataTools:
     
     @staticmethod
     def getPaperNameFromLink(link):
-        response = requests.get(link, headers = headers)
+        # response = requests.get(link, headers = headers)
         readme = response.json()
         # print(readme)
         if readme and "content" in readme:
@@ -82,7 +82,7 @@ class DataTools:
 
         # leave the first one 
         repos = repos[1:]
-        
+
         with open(f"{username}Repos", 'wb') as handle:
             pickle.dump(repos, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
