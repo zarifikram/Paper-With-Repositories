@@ -9,7 +9,7 @@ import pandas as pd
 class DataTools:
     @staticmethod
     def getPAT():
-        return "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"
+        return "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"
     
     @staticmethod
     def getGithub():
@@ -17,8 +17,16 @@ class DataTools:
         return Github(pat)
     
     @staticmethod
+    def getHead():
+        headers = {
+            "Authorization": f"Bearer {DataTools.getPAT()}",
+            # "Accept": "application/vnd.github.v3+json"
+        }
+        return headers
+
+    @staticmethod
     def getPaperNameFromLink(link):
-        # response = requests.get(link, headers = headers)
+        response = requests.get(link, headers = DataTools.getHead())
         readme = response.json()
         # print(readme)
         if readme and "content" in readme:
@@ -38,9 +46,11 @@ class DataTools:
             Takes the github repo link and returns the readme in encoded form
         '''
         link = link + "/readme"
-        response = requests.get(link, headers = headers)
+        response = requests.get(link, headers = DataTools.getHead())
         readme = response.json()
-
+        return readme 
+    
+        return readme
         if readme and "content" in readme:
             return readme["content"]
         else:
@@ -88,10 +98,11 @@ class DataTools:
 
 
     @staticmethod
-    def getDataFrameFromRepoList(repos, getReadMe):
+    def getDataFrameFromRepoList(repos, user, getReadMe):
         """
             Arguments:
                 repos : list of repository object
+                user : name of owner
                 getReadMe : boolean. True if want to fetch readme as well
             Returns:
                 dataframe containing useful information
@@ -104,8 +115,15 @@ class DataTools:
         open_issues_count = []
         subscribers_count = []
         name = []
+        readme = []
 
-        for repo in repos:
+        for repo in tqdm(repos):
+            if getReadMe:
+                try:
+                    readmeContent = repo.get_readme().content
+                except Github.UnknownObjectException:
+                    readmeContent = ""
+                readme.append(readmeContent)
             forks.append(repo.forks_count)
             stargazers_count.append(repo.stargazers_count)
             created_at.append(repo.created_at)
@@ -124,6 +142,16 @@ class DataTools:
         # df["last_modified"] = last_modified
         # df["networks"] = networks_count
         df["open_issues"] = open_issues_count
+        if getReadMe:
+            df["readme_encoded"] = readme
         # df["subscribers"] = subscribers_count
         
         return df
+    
+    @staticmethod
+    def getReadmeFromRepos(repos):
+        print(repos[0].get_readme())
+
+    @staticmethod
+    def getDecodedReadme(readme):
+        return base64.b64decode(readme).decode("utf-8")
