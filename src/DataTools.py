@@ -1,12 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 import base64
+import pandas as pd
 from github import Github
 from tqdm import tqdm
 import pickle
 import pandas as pd
 from github.GithubException import UnknownObjectException
-from src.config import * 
+from config import * 
+import os, sys 
 
 class DataTools:
     @staticmethod
@@ -158,3 +160,70 @@ class DataTools:
     @staticmethod
     def getDecodedReadme(readme):
         return base64.b64decode(readme).decode("utf-8")
+    
+    @staticmethod
+    def getGithubLinkDfFromPaperTitlesList(paperTitles, ignoreTopics=True):
+        papersWithLink = []
+        for paperTitle in tqdm(paperTitles):
+            link = DataTools.getTopGithubResultForPaperTitle(paperTitle)
+            if ignoreTopics and "topics" in link:
+                continue
+
+            paperLinkRecord = {"title": paperTitle, "link": link}
+            papersWithLink.append(paperLinkRecord)
+
+        papersWithLink = pd.DataFrame.from_dict(papersWithLink)
+        return papersWithLink
+    
+    @staticmethod
+    def getTopGithubResultForPaperTitle(paperTitle):
+        link = DataTools.getSearchLinkForPaper(paperTitle)
+        response = requests.get(link)
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        github_link = ""
+        for link in soup.find_all("a"):
+            href = link.get("href")
+            if href and "https://github.com" in href:
+                startIndex = href.find("https://github.com")
+                endIndex = href.find("&")
+                href = href[startIndex : endIndex]
+                github_link = href
+                break
+        
+        return github_link
+    
+                
+
+
+    @staticmethod
+    def getPaperTitleWithoutSpace(paperTitle):
+        return paperTitle.replace(" ", "+") 
+    
+    @staticmethod
+    def getSearchLinkForPaper(paperTitle):
+        paperTitleWithoutSpace = DataTools.getPaperTitleWithoutSpace(paperTitle)
+        return f"https://www.google.com/search?q=github+{paperTitleWithoutSpace}"
+    
+    @staticmethod
+    def getGithubSearchResultForPaperTitle(paperTitle):
+        searchParam = DataTools.getSearchParamForGithubSearch(paperTitle, 5)
+        api_url = "https://api.github.com/search/repositories"
+        response = requests.get(api_url, params=searchParam, headers=DataTools.getHead())
+        return response.json()
+    
+    @staticmethod
+    def getSearchParamForGithubSearch(paperTitle, nSearch):
+        return {
+            "q": paperTitle,
+            "sort": "readme",
+            "order": "desc",
+            "per_page": nSearch
+        }
+    
+    @staticmethod
+    def saveDfInCSV(df, fileName):
+        outputPath = os.path.join(os.curdir, "../outputs")  
+        if not os.path.exists(outputPath):
+            os.mkdir(outputPath)
+        df.to_csv(os.path.join(outputPath, f"{fileName}.csv"))
