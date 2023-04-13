@@ -6,7 +6,7 @@ from tqdm import tqdm
 import pickle
 import pandas as pd
 from github.GithubException import UnknownObjectException
-from config import * 
+from src.config import * 
 
 class DataTools:
     @staticmethod
