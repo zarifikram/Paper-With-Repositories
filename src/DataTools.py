@@ -227,3 +227,8 @@ class DataTools:
         if not os.path.exists(outputPath):
             os.mkdir(outputPath)
         df.to_csv(os.path.join(outputPath, f"{fileName}.csv"))
+
+    @staticmethod
+    def loadCSVFromOutput(fileName):
+        outputPath = os.path.join(os.curdir, "../outputs")  
+        return pd.read_csv(os.path.join(outputPath, f"{fileName}.csv"))
