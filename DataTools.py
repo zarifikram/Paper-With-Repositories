@@ -5,11 +5,13 @@ from github import Github
 from tqdm import tqdm
 import pickle
 import pandas as pd
+from github.GithubException import UnknownObjectException
+from config import * 
 
 class DataTools:
     @staticmethod
     def getPAT():
-        return "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"
+        return TOKEN
     
     @staticmethod
     def getGithub():
@@ -107,6 +109,7 @@ class DataTools:
             Returns:
                 dataframe containing useful information
         """
+        print(f"getting dataframe for {user}")
         forks = []
         stargazers_count = []
         created_at = []
@@ -121,7 +124,7 @@ class DataTools:
             if getReadMe:
                 try:
                     readmeContent = repo.get_readme().content
-                except Github.UnknownObjectException:
+                except UnknownObjectException:
                     readmeContent = ""
                 readme.append(readmeContent)
             forks.append(repo.forks_count)
