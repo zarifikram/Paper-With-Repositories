@@ -232,3 +232,5 @@ class DataTools:
     def loadCSVFromOutput(fileName):
         outputPath = os.path.join(os.curdir, "../outputs")  
         return pd.read_csv(os.path.join(outputPath, f"{fileName}.csv"))
+    
+    
