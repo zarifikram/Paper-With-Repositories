@@ -233,4 +233,19 @@ class DataTools:
         outputPath = os.path.join(os.curdir, "../outputs")  
         return pd.read_csv(os.path.join(outputPath, f"{fileName}.csv"))
     
+    @staticmethod
+    def getPaperGithubInBatches(paperTitles, companyName, batchSize = 1000):
+        """
+        Takes paper titles, breaks them into batches, fetch top github link for each paper title, and saves each batch as a csv file
+        Arguments:
+            paperTitles : list of paper titles
+            companyName : name of the company
+            batchSize : number of papers to be processed in a batch
+        """
+        for i in (range(0, len(paperTitles), batchSize)):
+            print(f"Processing batch {i//batchSize} / {len(paperTitles)//batchSize}")
+            batch = paperTitles[i : i + batchSize]
+            df = DataTools.getGithubLinkDfFromPaperTitlesList(batch)
+            DataTools.saveDfInCSV(df, f"{companyName}_{i//batchSize}")
+    
     
