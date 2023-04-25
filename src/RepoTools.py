@@ -9,6 +9,7 @@ import pandas as pd
 from github.GithubException import UnknownObjectException
 from config import * 
 import os, sys 
+import re
 
 class RepoTools:
     github = Github(TOKEN)
@@ -34,8 +35,13 @@ class RepoTools:
         # Get the readme from each repo
         repoWithReadmes = RepoTools.getRepoWithReadmes(repos)
 
+        # save the repoWithReadmes as pickle (just in case)
+        RepoTools.saveAsPickle(repoWithReadmes, f"{username}RepoWithReadme")
+
         # Get the paper name for each repo name and save it in df
-        paperWithRepoDf = RepoTools.getPaperNameFromRepoURLWithReadmes(repoWithReadmes)
+        paperWithRepoDf = RepoTools.getPaperWithRepoDfFromREADME(repoWithReadmes)
+
+        return paperWithRepoDf
     
     @staticmethod
     def getPaperWithRepoDfFromREADME(repoWithReadmes):
@@ -46,7 +52,24 @@ class RepoTools:
         returns:
             paperWithRepoDf: dataframe with repo name as the key and paper name as the value
         """
-        pass
+        title_patterns = [r'title\s*=\s*{([^}]+\s*)+}', r'title\s*=\s*"([^"]+\s*)+"']
+        paperWithRepoURLs = []
+        for repoWithReadme in repoWithReadmes:
+            
+            readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            repoName = repoWithReadme['repo'].full_name
+            # try to find the title using the patterns
+            for title_pattern in title_patterns:
+                title_matches = re.findall(title_pattern, readme)
+                titles = [match.strip() for match in title_matches]
+                # if found the title and title has at least 3 words
+                if len(titles) > 0 and len(titles[0].split()) > 2:
+                    paperWithRepoURL = {"title":titles[0], "url":"https://github.com/"+repoName}
+                    paperWithRepoURLs.append(paperWithRepoURL)  
+
+        paperWithRepoDf = pd.DataFrame(paperWithRepoURLs)
+        return paperWithRepoDf
+
     
     @staticmethod
     def getReposFromUser(user):
@@ -82,7 +105,7 @@ class RepoTools:
         for repo in tqdm(repos):
             readme = RepoTools.getReadmeFromRepo(repo)
             if readme:
-                repoWithReadmes.append({"repoURL": repo, "readme": readme})
+                repoWithReadmes.append({"repo": repo, "readme": readme})
         
         return repoWithReadmes
 
@@ -99,5 +122,29 @@ class RepoTools:
             return None
         return readme
     
+    @staticmethod
+    def saveAsPickle(obj, filename):
+        """
+        Saves the object as pickle
+        args: 
+            obj: object to be saved
+            filename: filename to save the object
+        returns: None
+        """
+        outputPath = os.path.join(os.curdir, "../pickles")  
+        if not os.path.exists(outputPath):
+            os.mkdir(outputPath)
 
+        with open(os.path.join(outputPath, filename), "wb") as f:
+            pickle.dump(obj, f)
+
+    @staticmethod
+    def loadPickle(filename):
+        """
+        Loads the pickle file
+        args: filename
+        returns: object
+        """
+        with open(os.path.join(os.curdir, "../pickles", filename), "rb") as f:
+            return pickle.load(f)
 
