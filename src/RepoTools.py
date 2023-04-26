@@ -19,10 +19,13 @@ class RepoTools:
         return TOKEN
     
     @staticmethod
-    def savePaperNameFromGithubUser(username):
+    def savePaperNameFromGithubUser(username, saveRepoWithReadme, saveExtendedRepoWithReadme):
         """
         Saves the paper names from the github user's repos with repo name as the key in csv file
-        args: username
+        args: 
+            username: github username
+            saveRepoWithReadme: bool to save the repoWithReadme as pickle
+            saveExtendedRepoWithReadme: bool to save the extendedRepoWithReadme as pickle
         returns: None
         """
         
@@ -32,19 +35,39 @@ class RepoTools:
         # Get their repos
         repos = RepoTools.getReposFromUser(user)
         
+        
         # Get the readme from each repo
         repoWithReadmes = RepoTools.getRepoWithReadmes(repos)
 
-        # save the repoWithReadmes as pickle (just in case)
-        RepoTools.saveAsPickle(repoWithReadmes, f"{username}RepoWithReadme")
+        # Get the github repos linked in the readme
+        TO-DO
+
+        # add the new repos to the repos list (if not already present)
+        TO-DO
+
+        # fetch the readme from the new repos
+        TO-DO
+
+        # save the repoWithReadmes as pickle
+        if saveRepoWithReadme:
+            RepoTools.saveAsPickle(repoWithReadmes, f"{username}RepoWithReadmes")
+
 
         # Get the paper name for each repo name and save it in df
-        paperWithRepoDf = RepoTools.getPaperWithRepoDfFromREADME(repoWithReadmes)
+        extendedRepoWithReadMes = RepoTools.getDataFromReadmes(repoWithReadmes)
 
-        return paperWithRepoDf
+        # save the extendedRepoWithReadmes as pickle
+        if saveExtendedRepoWithReadme:
+            RepoTools.saveAsPickle(extendedRepoWithReadMes, f"{username}ExtendedRepoWithReadmes")
+
+
+        # get papers from extendedRepoWithReadMes and save it in csv where paper name is the key
+         
+    
+        return extendedRepoWithReadMes
     
     @staticmethod
-    def getPaperWithRepoDfFromREADME(repoWithReadmes):
+    def getDataFromReadmes(repoWithReadmes):
         """
         Gets the paper name from readme and saves it in a dataframe with repo name as the key
         args:
@@ -52,25 +75,45 @@ class RepoTools:
         returns:
             paperWithRepoDf: dataframe with repo name as the key and paper name as the value
         """
-        title_patterns = [r'title\s*=\s*{([^}]+\s*)+}', r'title\s*=\s*"([^"]+\s*)+"']
-        paperWithRepoURLs = []
-        for repoWithReadme in repoWithReadmes:
-            
+        # title_patterns = [r'title\s*=\s*{([^}]+\s*)+}', r'title\s*=\s*"([^"]+\s*)+"']
+        extendedRepoWithReadMes = []
+        for repoWithReadme in tqdm(repoWithReadmes): 
             readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
-            repoName = repoWithReadme['repo'].full_name
             # try to find the title using the patterns
-            for title_pattern in title_patterns:
-                title_matches = re.findall(title_pattern, readme)
-                titles = [match.strip() for match in title_matches]
-                # if found the title and title has at least 3 words
-                if len(titles) > 0 and len(titles[0].split()) > 2:
-                    paperWithRepoURL = {"title":titles[0], "url":"https://github.com/"+repoName}
-                    paperWithRepoURLs.append(paperWithRepoURL)  
+            paperTitles = RepoTools.getPaperTitlesFromReadme(readme)
+            arxivLinks = RepoTools.getArxivLinksFromReadme(readme)
+            arxivPaperTitles = RepoTools.getPaperTitlesFromArxivLinks(arxivLinks)
 
-        paperWithRepoDf = pd.DataFrame(paperWithRepoURLs)
-        return paperWithRepoDf
+            repoWithReadme.update({"papers": paperTitles, "arxivLinks": arxivLinks, "arxivPaperTitles": arxivPaperTitles})
+            extendedRepoWithReadMes.append(repoWithReadme)
 
+        return extendedRepoWithReadMes
+
+    @staticmethod
+    def getGithubLinksFromReadme(readme):
+        link_patterns = [r'href="(https://github.com\S*)"']
+        githubLinks = []
+        for link_pattern in link_patterns:
+            links = re.findall(link_pattern, readme)
+            if len(links) > 0:
+                githubLinks.extend(links)
+
+        return githubLinks
     
+    @staticmethod
+    def getPaperTitlesFromReadme(readme):
+        title_patterns = [r'[^k]title\s*=\s*{\s*(.*)\s*}', r'[^k]title\s*=\s*"\s*(.*)\s*"']
+        paperTitles = []
+        for title_pattern in title_patterns:
+                titles = re.findall(title_pattern, readme)
+                # if found the title and title has at least 3 words
+                if len(titles) > 0:
+                    # paperTitles.extend(titles)
+                    paperTitles.extend([title for title in titles if len(title.split()) > 2])
+
+        return paperTitles
+    
+
     @staticmethod
     def getReposFromUser(user):
         """
@@ -122,6 +165,49 @@ class RepoTools:
             return None
         return readme
     
+    
+    @staticmethod
+    def getArxivLinksFromReadme(readme):
+        """
+        Gets the arxiv link from the readme
+        args: readme
+        returns: arxivLink
+        """
+        linkPatterns = [r'(arxiv\.org/abs/\d{4}\.\d{4,5})']
+        arxivLinks = []
+        for linkPattern in linkPatterns:
+            links = re.findall(linkPattern, readme)
+            links = ["https://" + link for link in links]
+            if len(links) > 0:
+                # paperTitles.extend(titles)
+                arxivLinks.extend(links)
+
+        return arxivLinks
+    
+    @staticmethod
+    def getPaperTitlesFromArxivLinks(arxivLinks):
+        """
+        Gets the paper title from the arxiv link
+        args: arxivLinks
+        returns: paperTitles
+        """
+        paperTitles = []
+        for arxivLink in arxivLinks:
+            paperTitles.append(RepoTools.getPaperTitleFromArxivLink(arxivLink))
+        
+        return paperTitles
+    
+    @staticmethod
+    def getPaperTitleFromArxivLink(arxivLink):
+        response = requests.get(arxivLink)
+
+        # extract paper title using regular expressions
+        title_regex = re.compile('<title>(.*)</title>')
+        title_match = title_regex.search(response.text)
+        paper_title = title_match.group(1)
+        return paper_title[13:]
+
+    
     @staticmethod
     def saveAsPickle(obj, filename):
         """
@@ -148,3 +234,9 @@ class RepoTools:
         with open(os.path.join(os.curdir, "../pickles", filename), "rb") as f:
             return pickle.load(f)
 
+
+    @staticmethod
+    def loadReposWithReadmeAndGetExtendedData(filename):
+        repoWithReadmes = RepoTools.loadPickle(filename)
+        extendedRepoWithReadMes = RepoTools.getDataFromReadmes(repoWithReadmes)
+        return extendedRepoWithReadMes
