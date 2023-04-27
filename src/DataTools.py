@@ -11,6 +11,13 @@ from config import *
 import os, sys 
 
 class DataTools:
+    """
+    Class containing static methods to fetch paper data using github api and google search.
+    Use this class to fetch data and save it in a dataframe.
+
+    To use it, you must have a github PAT. Get it from https://github.com/settings/tokens -> generate new token
+    Copy the token and paste it in config.py file in the TOKEN variable.
+    """
     @staticmethod
     def getPAT():
         return TOKEN
@@ -226,7 +233,7 @@ class DataTools:
         outputPath = os.path.join(os.curdir, "../outputs")  
         if not os.path.exists(outputPath):
             os.mkdir(outputPath)
-        df.to_csv(os.path.join(outputPath, f"{fileName}.csv"))
+        df.to_csv(os.path.join(outputPath, f"{fileName}.csv"), index = False)
 
     @staticmethod
     def loadCSVFromOutput(fileName):
