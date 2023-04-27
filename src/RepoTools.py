@@ -80,10 +80,11 @@ class RepoTools:
         extendedRepoWithReadMes = []
         for repoWithReadme in tqdm(repoWithReadmes): 
             readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            repoName = repoWithReadme["repo"].full_name
             # try to find the title using the patterns
             paperTitles = RepoTools.getPaperTitlesFromReadme(readme)
             arxivLinks = RepoTools.getArxivLinksFromReadme(readme)
-            arxivPaperTitles = RepoTools.getPaperTitlesFromArxivLinks(arxivLinks)
+            arxivPaperTitles = RepoTools.getPaperTitlesFromArxivLinks(repoName, arxivLinks)
 
             repoWithReadme.update({"papers": paperTitles, "arxivLinks": arxivLinks, "arxivPaperTitles": arxivPaperTitles})
             extendedRepoWithReadMes.append(repoWithReadme)
@@ -127,14 +128,20 @@ class RepoTools:
         githubLinks = []
         for repoWithReadme in repoWithReadmes:
             readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
-
-            githubLinks.extend(RepoTools.getGithubLinksFromReadme(readme))
+            repoName = repoWithReadme["repo"].full_name
+            githubLinks.extend(RepoTools.getGithubLinksFromReadme(repoName, readme))
 
         return np.unique(githubLinks)
 
 
     @staticmethod
-    def getGithubLinksFromReadme(readme):
+    def getGithubLinksFromReadme(repoName, readme):
+        """
+        Gets the github links from the readme
+        args:
+            repoName: name of the repo
+            readme: readme of the repo
+        """
         link_patterns = [r'https://github.com/([\w\-]*/[\w\-]*)']
         githubLinks = []
         for link_pattern in link_patterns:
@@ -143,7 +150,7 @@ class RepoTools:
                 githubLinks.extend(links)
 
         if len(githubLinks) > 5:
-            print('Found more than 5 github links in the readme. Ignoring the links')
+            print(f"Found more than 5 github links in https://github.com/{repoName}. Ignoring all of them. Please check the readme")
             return []
         return githubLinks
     
@@ -153,10 +160,12 @@ class RepoTools:
         paperTitles = []
         for title_pattern in title_patterns:
                 titles = re.findall(title_pattern, readme)
-                # if found the title and title has at least 3 words
                 if len(titles) > 0:
-                    # paperTitles.extend(titles)
-                    paperTitles.extend([title for title in titles if len(title.split()) > 2])
+                    # if found the title and title has at least 3 words
+                    titles = [title for title in titles if len(title.split()) > 2]
+                    # remove all instances of '{' and '}' from titles
+                    titles = [str(title).replace('{', '').replace('}', '') for title in titles]
+                    paperTitles.extend(titles)
 
         return paperTitles
     
@@ -230,18 +239,22 @@ class RepoTools:
                 # paperTitles.extend(titles)
                 arxivLinks.extend(links)
 
-        return arxivLinks
+        return np.unique(arxivLinks)
     
     @staticmethod
-    def getPaperTitlesFromArxivLinks(arxivLinks):
+    def getPaperTitlesFromArxivLinks(repoName, arxivLinks):
         """
         Gets the paper title from the arxiv link
-        args: arxivLinks
+        args: 
+            repoName : name of the repo
+            arxivLinks : list of arxiv links
         returns: paperTitles
         """
         paperTitles = []
+        # get only unique ones
+        arxivLinks = np.unique(arxivLinks)
         if len(arxivLinks) > 10:
-            print("Too many arxiv links (10), skipping")
+            print(f'Found more than 10 arxiv links in the readme of https://github.com/{repoName}. Ignoring the links')
             return paperTitles
         for arxivLink in arxivLinks:
             paperTitles.append(RepoTools.getPaperTitleFromArxivLink(arxivLink))
@@ -292,11 +305,11 @@ class RepoTools:
 
 
     @staticmethod
-    def loadReposWithReadmeAndGetExtendedData(filename, saveExtendedRepoWithReadme):
-        repoWithReadmes = RepoTools.loadPickle(filename)
+    def loadReposWithReadmeAndGetExtendedData(username, saveExtendedRepoWithReadme):
+        repoWithReadmes = RepoTools.loadPickle(f'{username}RepoWithReadmes')
         extendedRepoWithReadmesAndData = RepoTools.getDataFromReadmes(repoWithReadmes)
         if saveExtendedRepoWithReadme:
-            RepoTools.saveAsPickle(extendedRepoWithReadmesAndData, "extended_" + filename)
+            RepoTools.saveAsPickle(extendedRepoWithReadmesAndData, "extended_" + f'{username}RepoWithReadmes')
         return extendedRepoWithReadmesAndData
     
     @staticmethod
@@ -339,12 +352,12 @@ class RepoTools:
         return df
     
     @staticmethod
-    def loadExtendedRepoWithReadmeAndGetPaperDf(filename, ignoreArxivIfPaperTitleExists):
+    def loadExtendedRepoWithReadmeAndGetPaperDf(username, ignoreArxivIfPaperTitleExists):
         """
         Loads the extended repo with readme and gets the paper dataframe
         args: 
             filename: filename to load the extended repo with readme
             ignoreArxivIfPaperTitleExists: if True, ignores the arxiv link if paper title exists
         """
-        extendedRepoWithReadmesAndData = RepoTools.loadPickle(filename)
+        extendedRepoWithReadmesAndData = RepoTools.loadPickle(f'extended_{username}RepoWithReadmes')
         return RepoTools.getPaperDfFromExtendedRepoWithReadmesAndData(extendedRepoWithReadmesAndData, ignoreArxivIfPaperTitleExists)
