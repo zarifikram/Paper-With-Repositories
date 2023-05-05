@@ -1,0 +1,2318 @@
+[
+    {
+        "company": "23andMe, Inc.",
+        "repos": []
+    },
+    {
+        "company": "3M",
+        "repos": []
+    },
+    {
+        "company": "ABB Group",
+        "repos": []
+    },
+    {
+        "company": "ADP",
+        "repos": []
+    },
+    {
+        "company": "AES Corporation",
+        "repos": []
+    },
+    {
+        "company": "AGT INTERNATIONAL GMBH",
+        "repos": []
+    },
+    {
+        "company": "AKTIEBOLAGET SKF",
+        "repos": []
+    },
+    {
+        "company": "ARM Limited",
+        "repos": []
+    },
+    {
+        "company": "ARRI",
+        "repos": []
+    },
+    {
+        "company": "ASAPP INC",
+        "repos": []
+    },
+    {
+        "company": "ASD Inc.",
+        "repos": []
+    },
+    {
+        "company": "ASELSAN ELEKTRONIK",
+        "repos": []
+    },
+    {
+        "company": "ASML Netherlands BV",
+        "repos": []
+    },
+    {
+        "company": "ASUSTeK Computer Inc",
+        "repos": []
+    },
+    {
+        "company": "AVL List GmbH",
+        "repos": []
+    },
+    {
+        "company": "AWK Group AG",
+        "repos": []
+    },
+    {
+        "company": "Abbott Laboratories",
+        "repos": []
+    },
+    {
+        "company": "Accenture",
+        "repos": []
+    },
+    {
+        "company": "Actenum Corporation",
+        "repos": []
+    },
+    {
+        "company": "Acxiom Corporation",
+        "repos": []
+    },
+    {
+        "company": "Adaptive Technologies, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Adept Technology, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Adobe",
+        "repos": []
+    },
+    {
+        "company": "Advanced Micro Devices",
+        "repos": []
+    },
+    {
+        "company": "Affinnova, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Agilent Technologies",
+        "repos": []
+    },
+    {
+        "company": "Air China Limited",
+        "repos": []
+    },
+    {
+        "company": "Air Liquide Large Industries US LP",
+        "repos": []
+    },
+    {
+        "company": "Air Products and Chemicals Inc",
+        "repos": []
+    },
+    {
+        "company": "Airbnb",
+        "repos": []
+    },
+    {
+        "company": "Airbus Defence and Space",
+        "repos": []
+    },
+    {
+        "company": "Aisin AW Co Ltd",
+        "repos": []
+    },
+    {
+        "company": "Akamai Technologies Inc",
+        "repos": []
+    },
+    {
+        "company": "Alenia Aer",
+        "repos": []
+    },
+    {
+        "company": "Alibaba",
+        "repos": []
+    },
+    {
+        "company": "Allstate Insurance Company",
+        "repos": []
+    },
+    {
+        "company": "Alps Electric Co Ltd",
+        "repos": []
+    },
+    {
+        "company": "Alstom",
+        "repos": []
+    },
+    {
+        "company": "Amadeus",
+        "repos": []
+    },
+    {
+        "company": "Amazon",
+        "repos": ["amzn"]
+    },
+    {
+        "company": "Amdocs Development Limited",
+        "repos": []
+    },
+    {
+        "company": "American Express",
+        "repos": []
+    },
+    {
+        "company": "American GNC Corporation",
+        "repos": []
+    },
+    {
+        "company": "Ami Semiconductor",
+        "repos": []
+    },
+    {
+        "company": "Amobee, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Analog Devices Inc",
+        "repos": []
+    },
+    {
+        "company": "Apollo Diamond, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Apple",
+        "repos": ["apple"]
+    },
+    {
+        "company": "Applied Materials Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Aptima Inc",
+        "repos": []
+    },
+    {
+        "company": "Asahi Kasei Corporation",
+        "repos": []
+    },
+    {
+        "company": "Aspen Technology Inc",
+        "repos": []
+    },
+    {
+        "company": "AstraZeneca",
+        "repos": []
+    },
+    {
+        "company": "At And T Labs-research",
+        "repos": []
+    },
+    {
+        "company": "Au Optronics Corporation",
+        "repos": []
+    },
+    {
+        "company": "Audi AG",
+        "repos": []
+    },
+    {
+        "company": "Autodesk",
+        "repos": []
+    },
+    {
+        "company": "Autoliv ASP Inc",
+        "repos": []
+    },
+    {
+        "company": "Autonetworks Technologies, Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Autonomous Solutions, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Avago Technologies",
+        "repos": []
+    },
+    {
+        "company": "Avaya",
+        "repos": []
+    },
+    {
+        "company": "Aveo Inc",
+        "repos": []
+    },
+    {
+        "company": "Avx Corporation",
+        "repos": []
+    },
+    {
+        "company": "Axalta Coating Systems IP Co",
+        "repos": []
+    },
+    {
+        "company": "Axalta Coating Systems IP Co., LLC",
+        "repos": []
+    },
+    {
+        "company": "BAE Systems plc",
+        "repos": []
+    },
+    {
+        "company": "BAIDU",
+        "repos": []
+    },
+    {
+        "company": "BASF SE",
+        "repos": []
+    },
+    {
+        "company": "BBN Technologies",
+        "repos": []
+    },
+    {
+        "company": "BOE TECHNOLOGY GROUP CO., LTD.",
+        "repos": []
+    },
+    {
+        "company": "BOOKING.COM B.V.",
+        "repos": []
+    },
+    {
+        "company": "BP America Inc",
+        "repos": []
+    },
+    {
+        "company": "Baker Hughes a GE company",
+        "repos": []
+    },
+    {
+        "company": "Balluff GmbH",
+        "repos": []
+    },
+    {
+        "company": "Bang and Olufsen",
+        "repos": []
+    },
+    {
+        "company": "Bank of America Corporation",
+        "repos": []
+    },
+    {
+        "company": "Battelle",
+        "repos": []
+    },
+    {
+        "company": "Bayer AG",
+        "repos": []
+    },
+    {
+        "company": "Bayer Aktiengesellschaft",
+        "repos": []
+    },
+    {
+        "company": "Becton Dickinson and Company",
+        "repos": []
+    },
+    {
+        "company": "Bell",
+        "repos": []
+    },
+    {
+        "company": "Bentley Systems Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Bernafon AG",
+        "repos": []
+    },
+    {
+        "company": "Bio-Rad Laboratories Inc",
+        "repos": []
+    },
+    {
+        "company": "Blizzard Entertainment",
+        "repos": []
+    },
+    {
+        "company": "Bloomberg",
+        "repos": []
+    },
+    {
+        "company": "Boehringer-Ingelheim",
+        "repos": []
+    },
+    {
+        "company": "Boeing Corporation",
+        "repos": []
+    },
+    {
+        "company": "Bombardier",
+        "repos": []
+    },
+    {
+        "company": "Booz Allen Hamilton Inc",
+        "repos": []
+    },
+    {
+        "company": "Borealis",
+        "repos": []
+    },
+    {
+        "company": "Boston Scientific Scimed Inc",
+        "repos": []
+    },
+    {
+        "company": "Bracco Imaging",
+        "repos": []
+    },
+    {
+        "company": "Bridgestone Corporation",
+        "repos": []
+    },
+    {
+        "company": "British Telecommunications plc",
+        "repos": []
+    },
+    {
+        "company": "Broadcom",
+        "repos": []
+    },
+    {
+        "company": "Brooks Automation",
+        "repos": []
+    },
+    {
+        "company": "Bruker AXS GmbH",
+        "repos": []
+    },
+    {
+        "company": "Bruker BioSpin AG",
+        "repos": []
+    },
+    {
+        "company": "Bruker Daltonik GmbH",
+        "repos": []
+    },
+    {
+        "company": "Bytedance",
+        "repos": []
+    },
+    {
+        "company": "CA Inc",
+        "repos": []
+    },
+    {
+        "company": "CRC CARE Pty Ltd",
+        "repos": []
+    },
+    {
+        "company": "Ca Technologies",
+        "repos": []
+    },
+    {
+        "company": "Cabot Corporation",
+        "repos": []
+    },
+    {
+        "company": "Cadence Design Systems Inc",
+        "repos": []
+    },
+    {
+        "company": "Canon Inc",
+        "repos": []
+    },
+    {
+        "company": "Capgemini",
+        "repos": []
+    },
+    {
+        "company": "Capital One Services LLC",
+        "repos": []
+    },
+    {
+        "company": "Carl Zeiss",
+        "repos": []
+    },
+    {
+        "company": "Carrier Corporation",
+        "repos": []
+    },
+    {
+        "company": "Casio Computer Co., Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Caterpillar",
+        "repos": []
+    },
+    {
+        "company": "Cavium, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Cerner Innovation Inc",
+        "repos": []
+    },
+    {
+        "company": "Charles River Analytics Inc",
+        "repos": []
+    },
+    {
+        "company": "Check Point Software Technologies, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Chevron Corporation",
+        "repos": []
+    },
+    {
+        "company": "China Mobile",
+        "repos": []
+    },
+    {
+        "company": "Cigital",
+        "repos": []
+    },
+    {
+        "company": "Cigna Corporation",
+        "repos": []
+    },
+    {
+        "company": "Cisco Systems",
+        "repos": []
+    },
+    {
+        "company": "Citigroup",
+        "repos": []
+    },
+    {
+        "company": "Citrix",
+        "repos": []
+    },
+    {
+        "company": "Clarion Co., Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Cochlear Limited",
+        "repos": []
+    },
+    {
+        "company": "Codexis Inc",
+        "repos": []
+    },
+    {
+        "company": "Cognizant",
+        "repos": []
+    },
+    {
+        "company": "Comcast",
+        "repos": []
+    },
+    {
+        "company": "CommScope Technologies LLC",
+        "repos": []
+    },
+    {
+        "company": "Computer Sciences Corporation - USA",
+        "repos": []
+    },
+    {
+        "company": "Connotate, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Consolidated Edison Company",
+        "repos": []
+    },
+    {
+        "company": "Continental Automotive GmbH",
+        "repos": []
+    },
+    {
+        "company": "Corelogic Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Coriant Advanced Technology LLC",
+        "repos": []
+    },
+    {
+        "company": "Corning Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Cortec, L.L.C.",
+        "repos": []
+    },
+    {
+        "company": "Cranial Technologies",
+        "repos": []
+    },
+    {
+        "company": "Cray Inc",
+        "repos": []
+    },
+    {
+        "company": "Cypress Semiconductor Corporation",
+        "repos": []
+    },
+    {
+        "company": "D Wave Systems Inc",
+        "repos": []
+    },
+    {
+        "company": "DEEP GENOMICS INCORPORATED",
+        "repos": []
+    },
+    {
+        "company": "DENSO Corporation",
+        "repos": []
+    },
+    {
+        "company": "Daikin Industries Ltd",
+        "repos": []
+    },
+    {
+        "company": "Daimler AG",
+        "repos": []
+    },
+    {
+        "company": "Danaher Corporation",
+        "repos": []
+    },
+    {
+        "company": "Dassault Systemes",
+        "repos": []
+    },
+    {
+        "company": "DataRobot Inc",
+        "repos": []
+    },
+    {
+        "company": "DeepMind Technologies",
+        "repos": []
+    },
+    {
+        "company": "Deere & Company",
+        "repos": []
+    },
+    {
+        "company": "Definiens AG",
+        "repos": []
+    },
+    {
+        "company": "Dell Products",
+        "repos": []
+    },
+    {
+        "company": "Delphi",
+        "repos": []
+    },
+    {
+        "company": "Deutsche Telekom",
+        "repos": []
+    },
+    {
+        "company": "DiDi",
+        "repos": []
+    },
+    {
+        "company": "Digia",
+        "repos": []
+    },
+    {
+        "company": "Digimarc Corporation",
+        "repos": []
+    },
+    {
+        "company": "Disney",
+        "repos": []
+    },
+    {
+        "company": "Dolby",
+        "repos": []
+    },
+    {
+        "company": "Dropbox Inc",
+        "repos": []
+    },
+    {
+        "company": "DuPont",
+        "repos": []
+    },
+    {
+        "company": "E.S.I. SOFTWARE LTD",
+        "repos": []
+    },
+    {
+        "company": "EMC Corporation",
+        "repos": []
+    },
+    {
+        "company": "ENI SpA Italy",
+        "repos": []
+    },
+    {
+        "company": "ESI SOFTWARE LTD",
+        "repos": []
+    },
+    {
+        "company": "Eastman Kodak Company",
+        "repos": []
+    },
+    {
+        "company": "Eaton Corporation",
+        "repos": []
+    },
+    {
+        "company": "Elbit Systems Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Electronic Arts",
+        "repos": []
+    },
+    {
+        "company": "Electronic Data Systems Corporation",
+        "repos": []
+    },
+    {
+        "company": "Elekta AB",
+        "repos": []
+    },
+    {
+        "company": "Element Six Technologies Limited",
+        "repos": []
+    },
+    {
+        "company": "Elpida Memory, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Elsevier",
+        "repos": []
+    },
+    {
+        "company": "Emerson Process Management Power & Water Solutions, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Energy Conversion Devices, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Enjoyor Company Limited",
+        "repos": []
+    },
+    {
+        "company": "Entegris Inc",
+        "repos": []
+    },
+    {
+        "company": "Entelos, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Ericsson Sweden",
+        "repos": []
+    },
+    {
+        "company": "Ethicon Endo-Surgery Inc",
+        "repos": []
+    },
+    {
+        "company": "Experian",
+        "repos": []
+    },
+    {
+        "company": "Express Scripts Holding",
+        "repos": []
+    },
+    {
+        "company": "Exxon Mobil Corporation",
+        "repos": []
+    },
+    {
+        "company": "FFC Limited",
+        "repos": []
+    },
+    {
+        "company": "FSI International, Inc.",
+        "repos": []
+    },
+    {
+        "company": "FUJIFILM Corporation",
+        "repos": []
+    },
+    {
+        "company": "Fair Isaac Corporation",
+        "repos": []
+    },
+    {
+        "company": "Fanuc Ltd",
+        "repos": []
+    },
+    {
+        "company": "FireEye Inc",
+        "repos": []
+    },
+    {
+        "company": "Fisher-Rosemount Systems, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Flextronics AP LLC",
+        "repos": []
+    },
+    {
+        "company": "Fluke Corporation",
+        "repos": []
+    },
+    {
+        "company": "Fluor Corporation",
+        "repos": []
+    },
+    {
+        "company": "Ford Motor Company",
+        "repos": []
+    },
+    {
+        "company": "Freescale Semiconductor",
+        "repos": []
+    },
+    {
+        "company": "Fujitsu Ltd",
+        "repos": []
+    },
+    {
+        "company": "Furuno Electric Co",
+        "repos": []
+    },
+    {
+        "company": "Futurewei Tech",
+        "repos": []
+    },
+    {
+        "company": "GE Medical Systems Information Technologies, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Gateway Inc",
+        "repos": []
+    },
+    {
+        "company": "General Dynamics Advanced Information Systems Inc",
+        "repos": []
+    },
+    {
+        "company": "General Electric Company",
+        "repos": []
+    },
+    {
+        "company": "General Motors",
+        "repos": []
+    },
+    {
+        "company": "Github",
+        "repos": []
+    },
+    {
+        "company": "Global Foundries Inc",
+        "repos": []
+    },
+    {
+        "company": "GoPro, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Goldman Sachs & Co",
+        "repos": []
+    },
+    {
+        "company": "GrammaTech",
+        "repos": []
+    },
+    {
+        "company": "Gravity Research and Development Kft.",
+        "repos": []
+    },
+    {
+        "company": "Groupon, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Guardian Industries Corp",
+        "repos": []
+    },
+    {
+        "company": "HERE Global BV",
+        "repos": []
+    },
+    {
+        "company": "HNC Software, Inc.",
+        "repos": []
+    },
+    {
+        "company": "HNTB Holdings Ltd",
+        "repos": []
+    },
+    {
+        "company": "HRL Laboratories",
+        "repos": []
+    },
+    {
+        "company": "HTC",
+        "repos": []
+    },
+    {
+        "company": "Hach Company",
+        "repos": []
+    },
+    {
+        "company": "Halliburton",
+        "repos": []
+    },
+    {
+        "company": "Harman International Industries Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Harris Corporation",
+        "repos": []
+    },
+    {
+        "company": "Hcl Technologies",
+        "repos": []
+    },
+    {
+        "company": "Healthways, Inc.",
+        "repos": []
+    },
+    {
+        "company": "HeartFlow Inc",
+        "repos": []
+    },
+    {
+        "company": "Henry Ford Health System",
+        "repos": []
+    },
+    {
+        "company": "Hewlett-Packard Inc.",
+        "repos": []
+    },
+    {
+        "company": "Hitachi Ltd",
+        "repos": []
+    },
+    {
+        "company": "Hon Hai Precision Industry Co",
+        "repos": []
+    },
+    {
+        "company": "Honda R and D Co",
+        "repos": []
+    },
+    {
+        "company": "Honeywell International Inc",
+        "repos": []
+    },
+    {
+        "company": "Huawei Technologies",
+        "repos": []
+    },
+    {
+        "company": "Hudson Co., Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Hulu",
+        "repos": []
+    },
+    {
+        "company": "Hypres Inc",
+        "repos": []
+    },
+    {
+        "company": "Hypres, Inc",
+        "repos": []
+    },
+    {
+        "company": "Hyundai Motor Group",
+        "repos": []
+    },
+    {
+        "company": "IBM",
+        "repos": []
+    },
+    {
+        "company": "ICF INTERNATIONAL",
+        "repos": []
+    },
+    {
+        "company": "ID QUANTIQUE",
+        "repos": []
+    },
+    {
+        "company": "IHS Markit Ltd",
+        "repos": []
+    },
+    {
+        "company": "INFOTECH SOFT, INC.",
+        "repos": []
+    },
+    {
+        "company": "INTELLIGENT FUSION TECHNOLOGY INC",
+        "repos": []
+    },
+    {
+        "company": "Icosystem Corporation",
+        "repos": []
+    },
+    {
+        "company": "Illumina Inc",
+        "repos": []
+    },
+    {
+        "company": "Indizen Optical Technologies of America LLC",
+        "repos": []
+    },
+    {
+        "company": "Infineon Technologies AG",
+        "repos": []
+    },
+    {
+        "company": "Infinera Corporation",
+        "repos": []
+    },
+    {
+        "company": "Infosys",
+        "repos": []
+    },
+    {
+        "company": "Ingenuity Systems, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Inotera Memories, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Intel Corporation",
+        "repos": []
+    },
+    {
+        "company": "Intelligent Automation Inc",
+        "repos": []
+    },
+    {
+        "company": "Intertrust Technologies Corp.",
+        "repos": []
+    },
+    {
+        "company": "Interuniversity Micro-Electronics Center at Leuven",
+        "repos": []
+    },
+    {
+        "company": "Interval Research",
+        "repos": []
+    },
+    {
+        "company": "Intuit Inc",
+        "repos": []
+    },
+    {
+        "company": "Invensense Inc",
+        "repos": []
+    },
+    {
+        "company": "Invensys Systems, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Israel Aerospace Industries Ltd",
+        "repos": []
+    },
+    {
+        "company": "JFE Steel Corporation",
+        "repos": []
+    },
+    {
+        "company": "JPMorgan Chase Bank",
+        "repos": []
+    },
+    {
+        "company": "JVC KENWOOD Corporation",
+        "repos": []
+    },
+    {
+        "company": "Janssen-Cilag",
+        "repos": []
+    },
+    {
+        "company": "Johnson & Johnson Pharmaceutical Research & Development Raritan",
+        "repos": []
+    },
+    {
+        "company": "Johnson Controls",
+        "repos": []
+    },
+    {
+        "company": "Juniper Networks Inc",
+        "repos": []
+    },
+    {
+        "company": "Justsystem Corporation",
+        "repos": []
+    },
+    {
+        "company": "KDDI Corporation",
+        "repos": []
+    },
+    {
+        "company": "KLA-Tencor Corporation",
+        "repos": []
+    },
+    {
+        "company": "KT Corporation",
+        "repos": []
+    },
+    {
+        "company": "KYOCERA Document Solutions Inc.",
+        "repos": []
+    },
+    {
+        "company": "Kabushiki Kaisha Yaskawa Denki",
+        "repos": []
+    },
+    {
+        "company": "Kakao Corp",
+        "repos": []
+    },
+    {
+        "company": "Kansai Paint Co., Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Kia Motors Corporation",
+        "repos": []
+    },
+    {
+        "company": "Kimberly-Clark Worldwide Inc",
+        "repos": []
+    },
+    {
+        "company": "Kitware",
+        "repos": []
+    },
+    {
+        "company": "Koch Industries, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Kone Corporation",
+        "repos": []
+    },
+    {
+        "company": "Kongsberg Maritime AS",
+        "repos": []
+    },
+    {
+        "company": "Konica Minolta Laboratory",
+        "repos": []
+    },
+    {
+        "company": "Korea Electric Power",
+        "repos": []
+    },
+    {
+        "company": "L'Oreal",
+        "repos": []
+    },
+    {
+        "company": "L-3 Communications",
+        "repos": []
+    },
+    {
+        "company": "LENOVO",
+        "repos": []
+    },
+    {
+        "company": "LEUKOCARE AG",
+        "repos": []
+    },
+    {
+        "company": "LG Chem Ltd",
+        "repos": []
+    },
+    {
+        "company": "LG Electronics Korea",
+        "repos": []
+    },
+    {
+        "company": "LSI Logic Corporation",
+        "repos": []
+    },
+    {
+        "company": "Lam Research Corporation",
+        "repos": []
+    },
+    {
+        "company": "Lattec IS",
+        "repos": []
+    },
+    {
+        "company": "Lear Corporation",
+        "repos": []
+    },
+    {
+        "company": "Lego AS",
+        "repos": []
+    },
+    {
+        "company": "Lehman Brothers",
+        "repos": []
+    },
+    {
+        "company": "Leidos Inc",
+        "repos": []
+    },
+    {
+        "company": "Lexis Nexis",
+        "repos": []
+    },
+    {
+        "company": "Life Technologies Corporation",
+        "repos": []
+    },
+    {
+        "company": "Lincom Corporation",
+        "repos": []
+    },
+    {
+        "company": "LinkedIn",
+        "repos": []
+    },
+    {
+        "company": "Lite-On It Corporation",
+        "repos": []
+    },
+    {
+        "company": "Livermore Software Technology Corp",
+        "repos": []
+    },
+    {
+        "company": "Lockheed Martin Corporation",
+        "repos": []
+    },
+    {
+        "company": "Logitech",
+        "repos": []
+    },
+    {
+        "company": "Lowe's Companies, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Lunit Inc",
+        "repos": []
+    },
+    {
+        "company": "Lyft",
+        "repos": []
+    },
+    {
+        "company": "MBDA France",
+        "repos": []
+    },
+    {
+        "company": "MOBILEYE VISION TECHNOLOGIES LTD.",
+        "repos": []
+    },
+    {
+        "company": "Mahindra",
+        "repos": []
+    },
+    {
+        "company": "Mainstream Engineering Corporation",
+        "repos": []
+    },
+    {
+        "company": "Manitoba Hydro",
+        "repos": []
+    },
+    {
+        "company": "Massachusetts Mutual Life Insurance Company",
+        "repos": []
+    },
+    {
+        "company": "Materialise",
+        "repos": []
+    },
+    {
+        "company": "Materialise N.V.",
+        "repos": []
+    },
+    {
+        "company": "MathWorks",
+        "repos": []
+    },
+    {
+        "company": "Maxtor Corporation",
+        "repos": []
+    },
+    {
+        "company": "Mazda Motor",
+        "repos": []
+    },
+    {
+        "company": "McDonald's",
+        "repos": []
+    },
+    {
+        "company": "McKesson Financial Holdings",
+        "repos": []
+    },
+    {
+        "company": "McKinsey & Company",
+        "repos": []
+    },
+    {
+        "company": "MedImmune Inc",
+        "repos": []
+    },
+    {
+        "company": "Mediatek Inc",
+        "repos": []
+    },
+    {
+        "company": "Medtronic Inc",
+        "repos": []
+    },
+    {
+        "company": "Medtronic, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Mentor Graphics Corporation",
+        "repos": []
+    },
+    {
+        "company": "Merck",
+        "repos": []
+    },
+    {
+        "company": "Metso Automation USA Inc.",
+        "repos": []
+    },
+    {
+        "company": "Micron",
+        "repos": []
+    },
+    {
+        "company": "Microstrategy, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Midea Group",
+        "repos": []
+    },
+    {
+        "company": "Mitel Networks",
+        "repos": []
+    },
+    {
+        "company": "Mitsubishi Electric Corporation",
+        "repos": []
+    },
+    {
+        "company": "Morgan Stanley",
+        "repos": []
+    },
+    {
+        "company": "Motorola",
+        "repos": []
+    },
+    {
+        "company": "Mozilla",
+        "repos": []
+    },
+    {
+        "company": "NCR Corporation",
+        "repos": []
+    },
+    {
+        "company": "NEC Corporation",
+        "repos": []
+    },
+    {
+        "company": "NETFLIX INC",
+        "repos": []
+    },
+    {
+        "company": "NIKE, Inc.",
+        "repos": []
+    },
+    {
+        "company": "NUTONIAN, INC.",
+        "repos": []
+    },
+    {
+        "company": "NVIDIA",
+        "repos": ["NVIDIA", "NVLabs"]
+    },
+    {
+        "company": "NXP Semiconductors",
+        "repos": []
+    },
+    {
+        "company": "Nalco Company",
+        "repos": []
+    },
+    {
+        "company": "Nanogen, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Narus, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Natera Inc",
+        "repos": []
+    },
+    {
+        "company": "National Instruments Corporation",
+        "repos": []
+    },
+    {
+        "company": "Natural Selection Inc",
+        "repos": []
+    },
+    {
+        "company": "Naver Corporation",
+        "repos": []
+    },
+    {
+        "company": "Nestor, Inc.",
+        "repos": []
+    },
+    {
+        "company": "NetApp",
+        "repos": []
+    },
+    {
+        "company": "Nidec Motor",
+        "repos": []
+    },
+    {
+        "company": "Nihon Unisys",
+        "repos": []
+    },
+    {
+        "company": "Nikon",
+        "repos": []
+    },
+    {
+        "company": "Nippon Telegraph and Telephone Corporation",
+        "repos": []
+    },
+    {
+        "company": "Nissan",
+        "repos": []
+    },
+    {
+        "company": "Nokia Corporation",
+        "repos": []
+    },
+    {
+        "company": "Nortel Networks",
+        "repos": []
+    },
+    {
+        "company": "Northrop Grumman corporation",
+        "repos": []
+    },
+    {
+        "company": "Novartis International AG",
+        "repos": []
+    },
+    {
+        "company": "Novatek Microelectronics Corp",
+        "repos": []
+    },
+    {
+        "company": "Novell, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Novo Nordisk",
+        "repos": []
+    },
+    {
+        "company": "NuTech Solutions GmbH",
+        "repos": []
+    },
+    {
+        "company": "Nuance Communications",
+        "repos": []
+    },
+    {
+        "company": "Numerica Corp",
+        "repos": []
+    },
+    {
+        "company": "Nutanix Inc",
+        "repos": []
+    },
+    {
+        "company": "OFS FITEL LLC",
+        "repos": []
+    },
+    {
+        "company": "OPTUM INC",
+        "repos": []
+    },
+    {
+        "company": "Oki Electric Industry",
+        "repos": []
+    },
+    {
+        "company": "Olympus Corporation",
+        "repos": []
+    },
+    {
+        "company": "Omron Adept Technologies Inc",
+        "repos": []
+    },
+    {
+        "company": "Open Text Corporation",
+        "repos": []
+    },
+    {
+        "company": "OpenAI",
+        "repos": []
+    },
+    {
+        "company": "Oracle",
+        "repos": []
+    },
+    {
+        "company": "Orbotech Ltd",
+        "repos": []
+    },
+    {
+        "company": "Osaro",
+        "repos": []
+    },
+    {
+        "company": "PARC",
+        "repos": []
+    },
+    {
+        "company": "PDF Solutions, Inc.",
+        "repos": []
+    },
+    {
+        "company": "PEARSON EDUCATION INC",
+        "repos": []
+    },
+    {
+        "company": "PGS Geophysical AS",
+        "repos": []
+    },
+    {
+        "company": "PPG Industries Ohio Inc",
+        "repos": []
+    },
+    {
+        "company": "PREFERRED NETWORKS INC",
+        "repos": []
+    },
+    {
+        "company": "PTC Inc",
+        "repos": []
+    },
+    {
+        "company": "Palo Alto Networks",
+        "repos": []
+    },
+    {
+        "company": "Palomar Technology, LLC",
+        "repos": []
+    },
+    {
+        "company": "Panasonic Corporation",
+        "repos": []
+    },
+    {
+        "company": "Pandora Media Inc",
+        "repos": []
+    },
+    {
+        "company": "Pavilion Technologies",
+        "repos": []
+    },
+    {
+        "company": "Pearson plc",
+        "repos": []
+    },
+    {
+        "company": "Petroleum Geo-Services ASA",
+        "repos": []
+    },
+    {
+        "company": "Petronas Carigali Sdn Bhd",
+        "repos": []
+    },
+    {
+        "company": "Pfizer",
+        "repos": []
+    },
+    {
+        "company": "Philip Morris Products",
+        "repos": []
+    },
+    {
+        "company": "Philips Research",
+        "repos": []
+    },
+    {
+        "company": "Pinterest",
+        "repos": []
+    },
+    {
+        "company": "Pioneer Hi-Bred International, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Pitney Bowes Inc",
+        "repos": []
+    },
+    {
+        "company": "Posco",
+        "repos": []
+    },
+    {
+        "company": "Pratt and Whitney",
+        "repos": []
+    },
+    {
+        "company": "ProMOS Technologies Inc.",
+        "repos": []
+    },
+    {
+        "company": "Procter & Gamble",
+        "repos": []
+    },
+    {
+        "company": "Progenics Pharmaceuticals Inc",
+        "repos": []
+    },
+    {
+        "company": "Progressive",
+        "repos": []
+    },
+    {
+        "company": "QinetiQ",
+        "repos": []
+    },
+    {
+        "company": "Qualcomm Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Quanta Computer",
+        "repos": []
+    },
+    {
+        "company": "Quicksilver Technology, Inc.",
+        "repos": []
+    },
+    {
+        "company": "REPSOL",
+        "repos": []
+    },
+    {
+        "company": "Rakuten",
+        "repos": []
+    },
+    {
+        "company": "Rambus Inc",
+        "repos": []
+    },
+    {
+        "company": "Raytheon",
+        "repos": []
+    },
+    {
+        "company": "Recommind, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Red Hat Inc",
+        "repos": []
+    },
+    {
+        "company": "Reliance Electric Technologies, LLC",
+        "repos": []
+    },
+    {
+        "company": "Relx Group",
+        "repos": []
+    },
+    {
+        "company": "Renesas Electronics Corporation",
+        "repos": []
+    },
+    {
+        "company": "Research In Motion Limited",
+        "repos": []
+    },
+    {
+        "company": "Ricoh",
+        "repos": []
+    },
+    {
+        "company": "Rigetti Computing",
+        "repos": []
+    },
+    {
+        "company": "Robert Bosch GmbH",
+        "repos": []
+    },
+    {
+        "company": "Rockwell Automation",
+        "repos": []
+    },
+    {
+        "company": "Rockwell Collins Inc",
+        "repos": []
+    },
+    {
+        "company": "Rohde & Schwarz GmbH",
+        "repos": []
+    },
+    {
+        "company": "Rolls Royce",
+        "repos": []
+    },
+    {
+        "company": "SAAB AB",
+        "repos": []
+    },
+    {
+        "company": "SAIC",
+        "repos": []
+    },
+    {
+        "company": "SAP AG",
+        "repos": []
+    },
+    {
+        "company": "SAS Institute",
+        "repos": []
+    },
+    {
+        "company": "SK Hynix Inc",
+        "repos": []
+    },
+    {
+        "company": "SK Telecom Co",
+        "repos": []
+    },
+    {
+        "company": "SMART INFORMATION FLOW TECHNOLGIES, LLC",
+        "repos": []
+    },
+    {
+        "company": "SOFTBANK ROBOTICS EUROPE",
+        "repos": []
+    },
+    {
+        "company": "SPOTIFY AB",
+        "repos": []
+    },
+    {
+        "company": "SPX Corporation",
+        "repos": []
+    },
+    {
+        "company": "SRC Inc",
+        "repos": []
+    },
+    {
+        "company": "SRI International",
+        "repos": []
+    },
+    {
+        "company": "STATE GRID JIANGSU ELECTRIC POWER COMPANY NAN JING POWER SUPPLY COMPANY",
+        "repos": []
+    },
+    {
+        "company": "STMicroelectronics",
+        "repos": []
+    },
+    {
+        "company": "STROZ FRIEDBERG, LLC",
+        "repos": []
+    },
+    {
+        "company": "Samsung Electronics",
+        "repos": []
+    },
+    {
+        "company": "Sandia National Laboratories, New Mexico",
+        "repos": []
+    },
+    {
+        "company": "Sanofi",
+        "repos": []
+    },
+    {
+        "company": "Sanyo Electric Co., Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Sarnoff Corporation",
+        "repos": []
+    },
+    {
+        "company": "Saudi Arabian Oil Company",
+        "repos": []
+    },
+    {
+        "company": "Schlumberger Limited",
+        "repos": []
+    },
+    {
+        "company": "Schneider Electric Automation GmbH",
+        "repos": []
+    },
+    {
+        "company": "Schneider Electric USA Inc",
+        "repos": []
+    },
+    {
+        "company": "Seagate Technology USA",
+        "repos": []
+    },
+    {
+        "company": "Securboration, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Seiko Epson Corporation",
+        "repos": []
+    },
+    {
+        "company": "Semiconductor Energy Laboratory Co",
+        "repos": []
+    },
+    {
+        "company": "Semiconductor Manufacturing International (Shanghai) Corporation",
+        "repos": []
+    },
+    {
+        "company": "Sensetime",
+        "repos": []
+    },
+    {
+        "company": "Sensis Corporation",
+        "repos": []
+    },
+    {
+        "company": "Sensys Medical, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Sharp Corporation",
+        "repos": []
+    },
+    {
+        "company": "Sharper Image Corporation",
+        "repos": []
+    },
+    {
+        "company": "Shell Oil Company",
+        "repos": []
+    },
+    {
+        "company": "Siemens AG",
+        "repos": ["siemens"]
+    },
+    {
+        "company": "Sift LLC",
+        "repos": []
+    },
+    {
+        "company": "Sigma Space Corporation",
+        "repos": []
+    },
+    {
+        "company": "Silicon Graphics Inc",
+        "repos": []
+    },
+    {
+        "company": "Singapore Health Services Pte Ltd",
+        "repos": []
+    },
+    {
+        "company": "Smart Internet Technology CRC Pty Ltd",
+        "repos": []
+    },
+    {
+        "company": "Smiths Medical ASD, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Snap Inc",
+        "repos": []
+    },
+    {
+        "company": "Sony Corporation",
+        "repos": ["sony"]
+    },
+    {
+        "company": "Splunk Inc",
+        "repos": []
+    },
+    {
+        "company": "Sprint Corporation",
+        "repos": []
+    },
+    {
+        "company": "State Grid Corporation of China",
+        "repos": []
+    },
+    {
+        "company": "Stryker Corporation",
+        "repos": []
+    },
+    {
+        "company": "Sumitomo Wiring Systems, Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Sun Microsystems",
+        "repos": []
+    },
+    {
+        "company": "Swisscom AG",
+        "repos": []
+    },
+    {
+        "company": "Sybase Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Symantec",
+        "repos": []
+    },
+    {
+        "company": "Synopsys Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Sysmex Corporation",
+        "repos": []
+    },
+    {
+        "company": "TEJAS NETWORKS LTD.",
+        "repos": []
+    },
+    {
+        "company": "TOTAL SA",
+        "repos": []
+    },
+    {
+        "company": "TURBOMECA",
+        "repos": []
+    },
+    {
+        "company": "Taiheiyo Cement Corporation",
+        "repos": []
+    },
+    {
+        "company": "Tata Consultancy Services India",
+        "repos": []
+    },
+    {
+        "company": "Technicolor",
+        "repos": []
+    },
+    {
+        "company": "Telcordia Technologies, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Telefonica SA",
+        "repos": []
+    },
+    {
+        "company": "Tencent",
+        "repos": []
+    },
+    {
+        "company": "Tennessee Valley Authority",
+        "repos": []
+    },
+    {
+        "company": "Teradata US Inc",
+        "repos": []
+    },
+    {
+        "company": "Teradyne Inc",
+        "repos": []
+    },
+    {
+        "company": "Tesla",
+        "repos": []
+    },
+    {
+        "company": "Texas Instruments",
+        "repos": []
+    },
+    {
+        "company": "Thales Group",
+        "repos": []
+    },
+    {
+        "company": "The Boston Consulting Group Inc",
+        "repos": []
+    },
+    {
+        "company": "The Boston Consulting Group, Inc.",
+        "repos": []
+    },
+    {
+        "company": "The Nielsen Company (US) LLC",
+        "repos": []
+    },
+    {
+        "company": "Therma-Wave, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Thermo Fisher Scientific",
+        "repos": []
+    },
+    {
+        "company": "Thomson Reuters",
+        "repos": []
+    },
+    {
+        "company": "Tokyo Electron",
+        "repos": []
+    },
+    {
+        "company": "Toshiba Corporation",
+        "repos": []
+    },
+    {
+        "company": "Toyota Motor Corporation",
+        "repos": []
+    },
+    {
+        "company": "Trend Micro Incorporated",
+        "repos": []
+    },
+    {
+        "company": "Trilogy Development Group, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Trimble Navigation Limited",
+        "repos": []
+    },
+    {
+        "company": "Twitter",
+        "repos": []
+    },
+    {
+        "company": "UBS AG",
+        "repos": []
+    },
+    {
+        "company": "UOP LLC",
+        "repos": []
+    },
+    {
+        "company": "UTC Fire & Security Corporation",
+        "repos": []
+    },
+    {
+        "company": "Uber",
+        "repos": []
+    },
+    {
+        "company": "Unisearch Associates",
+        "repos": []
+    },
+    {
+        "company": "Unisys Corporation",
+        "repos": []
+    },
+    {
+        "company": "United Microelectronics Corp",
+        "repos": []
+    },
+    {
+        "company": "United Parcel Service of America Inc",
+        "repos": []
+    },
+    {
+        "company": "VECNA TECHNOLOGIES INC",
+        "repos": []
+    },
+    {
+        "company": "VERISIGN, INC.",
+        "repos": []
+    },
+    {
+        "company": "Varian Medical Systems Inc",
+        "repos": []
+    },
+    {
+        "company": "Veracyte Inc",
+        "repos": []
+    },
+    {
+        "company": "Verdande Technology AS",
+        "repos": []
+    },
+    {
+        "company": "Verily Life Sciences LLC",
+        "repos": []
+    },
+    {
+        "company": "Verity, Inc.",
+        "repos": []
+    },
+    {
+        "company": "Verizon Communications",
+        "repos": []
+    },
+    {
+        "company": "Vermillion Inc",
+        "repos": []
+    },
+    {
+        "company": "ViaSat Inc",
+        "repos": []
+    },
+    {
+        "company": "Victor Company of Japan, Ltd.",
+        "repos": []
+    },
+    {
+        "company": "Vodafone",
+        "repos": []
+    },
+    {
+        "company": "Volkswagen",
+        "repos": []
+    },
+    {
+        "company": "Volvo",
+        "repos": []
+    },
+    {
+        "company": "Vulcan Inc",
+        "repos": []
+    },
+    {
+        "company": "WSI Corporation",
+        "repos": []
+    },
+    {
+        "company": "Walmart",
+        "repos": []
+    },
+    {
+        "company": "Waymo LLC",
+        "repos": []
+    },
+    {
+        "company": "Wells Fargo",
+        "repos": []
+    },
+    {
+        "company": "Western Digital Technologies Inc",
+        "repos": []
+    },
+    {
+        "company": "WesternGeco LLC",
+        "repos": []
+    },
+    {
+        "company": "Westinghouse Electric Company",
+        "repos": []
+    },
+    {
+        "company": "Whirlpool",
+        "repos": []
+    },
+    {
+        "company": "Winbond Electronics Corp.",
+        "repos": []
+    },
+    {
+        "company": "Wipro Limited",
+        "repos": []
+    },
+    {
+        "company": "Wistron Corporation",
+        "repos": []
+    },
+    {
+        "company": "Wolfram Research Inc",
+        "repos": []
+    },
+    {
+        "company": "Xerox Corporation",
+        "repos": []
+    },
+    {
+        "company": "Xilinx Inc",
+        "repos": []
+    },
+    {
+        "company": "YANDEX EUROPE AG",
+        "repos": []
+    },
+    {
+        "company": "Yahoo Inc",
+        "repos": []
+    },
+    {
+        "company": "Yamaha Corporation",
+        "repos": []
+    },
+    {
+        "company": "Yokogawa Electric Corporation",
+        "repos": []
+    },
+    {
+        "company": "Zoox",
+        "repos": []
+    },
+    {
+        "company": "Zte",
+        "repos": []
+    },
+    {
+        "company": "cogvis",
+        "repos": []
+    },
+    {
+        "company": "eBay",
+        "repos": []
+    },
+    {
+        "company": "exact sciences corporation",
+        "repos": []
+    },
+    {
+        "company": "fairchild semiconductor",
+        "repos": []
+    },
+    {
+        "company": "google",
+        "repos": []
+    },
+    {
+        "company": "hellenic telecommunications",
+        "repos": []
+    },
+    {
+        "company": "hess corporation",
+        "repos": []
+    },
+    {
+        "company": "hsbc",
+        "repos": []
+    },
+    {
+        "company": "i2 technologies",
+        "repos": []
+    },
+    {
+        "company": "iRobot Corporation",
+        "repos": []
+    },
+    {
+        "company": "knexus research corp",
+        "repos": []
+    },
+    {
+        "company": "marvell semiconductor",
+        "repos": []
+    },
+    {
+        "company": "mellanox technologies israel",
+        "repos": []
+    },
+    {
+        "company": "novamente llc",
+        "repos": []
+    },
+    {
+        "company": "osram corporate",
+        "repos": []
+    },
+    {
+        "company": "pricewaterhousecoopers",
+        "repos": []
+    },
+    {
+        "company": "profactor gmbh",
+        "repos": []
+    },
+    {
+        "company": "realtek semiconductor",
+        "repos": []
+    },
+    {
+        "company": "salesforce.com, inc.",
+        "repos": []
+    },
+    {
+        "company": "sogou inc",
+        "repos": []
+    },
+    {
+        "company": "tomtom",
+        "repos": []
+    },
+    {
+        "company": "ubitech ltd",
+        "repos": []
+    },
+    {
+        "company": "vermillion inc",
+        "repos": []
+    },
+    {
+        "company": "Deloitte",
+        "repos": []
+    },
+    {
+        "company": "Facebook",
+        "repos": ["facebookresearch", "facebook"]
+    },
+    {
+        "company": "Microsoft",
+        "repos": []
+    }
+]

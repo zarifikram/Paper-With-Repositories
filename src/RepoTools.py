@@ -21,6 +21,8 @@ class RepoTools:
     Copy the token and paste it in config.py file in the TOKEN variable.
     """
     github = Github(TOKEN)
+    arxivDataset = pd.read_csv(os.path.join(os.curdir, "../data/arxiv.csv"))
+    
 
     @staticmethod
     def getPAT():
@@ -230,11 +232,11 @@ class RepoTools:
         args: readme
         returns: arxivLink
         """
-        linkPatterns = [r'(arxiv\.org/abs/\d{4}\.\d{4,5})']
+        linkPatterns = [r'arxiv\.org/abs/(\d{4}\.\d{4,5})', r'arxiv\.org/pdf/(\d{4}\.\d{4,5})']
         arxivLinks = []
         for linkPattern in linkPatterns:
             links = re.findall(linkPattern, readme)
-            links = ["https://" + link for link in links]
+            links = ["https://arxiv.org/abs/" + link for link in links]
             if len(links) > 0:
                 # paperTitles.extend(titles)
                 arxivLinks.extend(links)
@@ -257,7 +259,10 @@ class RepoTools:
             print(f'Found more than 10 arxiv links in the readme of https://github.com/{repoName}. Ignoring the links')
             return paperTitles
         for arxivLink in arxivLinks:
-            paperTitles.append(RepoTools.getPaperTitleFromArxivLink(arxivLink))
+            if arxivLink:
+                paperTitle = RepoTools.getPaperTitleFromArxivLink(arxivLink)
+                if paperTitle: 
+                    paperTitles.append(paperTitle)
         
         return paperTitles
     
@@ -268,12 +273,25 @@ class RepoTools:
         args: arxivLink
         returns: paperTitle
         """
-        response = requests.get(arxivLink)
 
+        id = float(arxivLink[22:])
+        # return the title (only 1 ) from the arxiv dataset using id (if the id exists)
+        if id in RepoTools.arxivDataset['id'].values:
+            return RepoTools.arxivDataset[RepoTools.arxivDataset['id'] == id]['title'].values[0].replace("\n ", "")
+
+        # otherwise just get it from the internet
+        arxivLink = "https://export." + arxivLink[8:]
+        response = requests.get(arxivLink)
+        
         # extract paper title using regular expressions
         title_regex = re.compile('<title>\[\d{4}.\d{4,5}]\s*(.*)</title>')
         title_match = title_regex.search(response.text)
-        paper_title = title_match.group(1)
+        # try to get the title from the response without exception
+        try:
+            paper_title = title_match.group(1)
+        except AttributeError:
+            print(f"Could not find the paper title in {arxivLink}")
+            paper_title = None
         return paper_title
 
     
@@ -322,16 +340,33 @@ class RepoTools:
         """
         paperTitles = []
         repoLinks = []
-        
+        forks = []
+        stargazers_counts = []
+        created_ats = []
+        open_issues_counts = []
+        names = []
+
         # sort the data based on the number of arxiv papers
         sortedData = sorted(extendedRepoWithReadmesAndData, key = lambda x : len(x['arxivPaperTitles']))
 
         for repoData in sortedData:
             repoLink = 'https://github.com/' + repoData['repo'].full_name
+            forks_count = repoData['repo'].forks_count
+            stargazers_count = repoData['repo'].stargazers_count
+            created_at = repoData['repo'].created_at
+            open_issues_count = repoData['repo'].open_issues_count
+            name = repoData['repo'].name
+            
             for title in repoData['papers']:
                 if not title in paperTitles:
                     paperTitles.append(title)
                     repoLinks.append(repoLink)
+                    forks.append(forks_count)
+                    stargazers_counts.append(stargazers_count)
+                    created_ats.append(created_at)
+                    open_issues_counts.append(open_issues_count)
+                    names.append(name)
+            
 
             # don't add the arxiv links if the paper title exists and ignoreArxivIfPaperTitleExists is True
             if ignoreArxivIfPaperTitleExists and len(repoData['papers']) > 0:
@@ -341,10 +376,20 @@ class RepoTools:
                 if not title in paperTitles:
                     paperTitles.append(title)
                     repoLinks.append(repoLink)
+                    forks.append(forks_count)
+                    stargazers_counts.append(stargazers_count)
+                    created_ats.append(created_at)
+                    open_issues_counts.append(open_issues_count)
+                    names.append(name)
                     
         df = pd.DataFrame()
         df['title'] = paperTitles
         df['repo_link'] = repoLinks
+        df['forks'] = forks
+        df['stargazers_count'] = stargazers_counts
+        df['created_at'] = created_ats
+        df['open_issues_count'] = open_issues_counts
+        df['name'] = names
 
         # we need to drop the rows with href in the title (these are not papers)
         # need to fix this
