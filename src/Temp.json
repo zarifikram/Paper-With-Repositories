@@ -1,11 +1,11 @@
 [
     {
         "company": "23andMe, Inc.",
-        "repos": ["23andMe"]
+        "repos": []
     },
     {
         "company": "3M",
-        "repos": ["3mcloud", "3m"]
+        "repos": []
     },
     {
         "company": "ABB Group",
@@ -13,7 +13,7 @@
     },
     {
         "company": "ADP",
-        "repos": ["adplabs", "adpllc"]
+        "repos": []
     },
     {
         "company": "AES Corporation",
@@ -21,39 +21,39 @@
     },
     {
         "company": "AGT INTERNATIONAL GMBH",
-        "repos": ["agtinternational"]
+        "repos": []
     },
     {
         "company": "AKTIEBOLAGET SKF",
-        "repos": ["SKF"]
+        "repos": []
     },
     {
         "company": "ARM Limited",
-        "repos": ["ARM-software","arm-university"]
+        "repos": []
     },
     {
         "company": "ARRI",
-        "repos": ["arri-cc"]
+        "repos": []
     },
     {
         "company": "ASAPP INC",
-        "repos": ["asappinc", "asappresearch"]
+        "repos": []
     },
     {
         "company": "ASD Inc.",
-        "repos": ["asd","asdteam-ltd"]
+        "repos": []
     },
     {
         "company": "ASELSAN ELEKTRONIK",
-        "repos": ["aselsan"]
+        "repos": []
     },
     {
         "company": "ASML Netherlands BV",
-        "repos": ["ASML-Labs"]
+        "repos": []
     },
     {
         "company": "ASUSTeK Computer Inc",
-        "repos": ["asus-iot"]
+        "repos": []
     },
     {
         "company": "AVL List GmbH",
@@ -61,15 +61,15 @@
     },
     {
         "company": "AWK Group AG",
-        "repos": ["awkgroupag"]
+        "repos": []
     },
     {
         "company": "Abbott Laboratories",
-        "repos": ["Abbott-Labs", "AbbottPlatform"]
+        "repos": []
     },
     {
         "company": "Accenture",
-        "repos": ["Accenture"]
+        "repos": []
     },
     {
         "company": "Actenum Corporation",
@@ -77,11 +77,11 @@
     },
     {
         "company": "Acxiom Corporation",
-        "repos": ["Acxiom"]
+        "repos": []
     },
     {
         "company": "Adaptive Technologies, Inc.",
-        "repos": ["AdaptiveWorX", "AdaptiveConsulting"]
+        "repos": []
     },
     {
         "company": "Adept Technology, Inc.",
@@ -89,19 +89,19 @@
     },
     {
         "company": "Adobe",
-        "repos": ["adobe", "AdobeDocs","adobe-marketing-cloud", "adobe-research"]
+        "repos": []
     },
     {
         "company": "Advanced Micro Devices",
-        "repos": ["amd"]
+        "repos": []
     },
     {
         "company": "Affinnova, Inc.",
-        "repos": ["affinnova"]
+        "repos": []
     },
     {
         "company": "Agilent Technologies",
-        "repos": ["Agilent"]
+        "repos": []
     },
     {
         "company": "Air China Limited",
@@ -109,7 +109,7 @@
     },
     {
         "company": "Air Liquide Large Industries US LP",
-        "repos": ["AirLiquide?language=bitbake"]
+        "repos": []
     },
     {
         "company": "Air Products and Chemicals Inc",
@@ -117,11 +117,11 @@
     },
     {
         "company": "Airbnb",
-        "repos": ["airbnb"]
+        "repos": []
     },
     {
         "company": "Airbus Defence and Space",
-        "repos": ["AirbusDefenceAndSpace","airbusgeo"]
+        "repos": []
     },
     {
         "company": "Aisin AW Co Ltd",
@@ -129,7 +129,7 @@
     },
     {
         "company": "Akamai Technologies Inc",
-        "repos": ["akamai"]
+        "repos": []
     },
     {
         "company": "Alenia Aer",
@@ -137,7 +137,7 @@
     },
     {
         "company": "Alibaba",
-        "repos": ["alibaba","aliyun"]
+        "repos": []
     },
     {
         "company": "Allstate Insurance Company",
@@ -145,15 +145,15 @@
     },
     {
         "company": "Alps Electric Co Ltd",
-        "repos": ["calcite"]
+        "repos": []
     },
     {
         "company": "Alstom",
-        "repos": ["alstom"]
+        "repos": []
     },
     {
         "company": "Amadeus",
-        "repos": ["AmadeusITGroup","amadeus4dev"]
+        "repos": []
     },
     {
         "company": "Amazon",
@@ -161,27 +161,27 @@
     },
     {
         "company": "Amdocs Development Limited",
-        "repos": ["open-amdocs"]
+        "repos": []
     },
     {
         "company": "American Express",
-        "repos": ["americanexpress"]
+        "repos": []
     },
     {
         "company": "American GNC Corporation",
-        "repos": ["gnc"]
+        "repos": []
     },
     {
         "company": "Ami Semiconductor",
-        "repos": ["ONSemiconductor"]
+        "repos": []
     },
     {
         "company": "Amobee, Inc.",
-        "repos": ["Amobee", "turn"]
+        "repos": []
     },
     {
         "company": "Analog Devices Inc",
-        "repos": ["analogdevicesinc"]
+        "repos": []
     },
     {
         "company": "Apollo Diamond, Inc.",
@@ -197,19 +197,19 @@
     },
     {
         "company": "Aptima Inc",
-        "repos": ["Aptima"]
+        "repos": []
     },
     {
         "company": "Asahi Kasei Corporation",
-        "repos": ["akm-multisensor"]
+        "repos": []
     },
     {
         "company": "Aspen Technology Inc",
-        "repos": ["aspentech"]
+        "repos": []
     },
     {
         "company": "AstraZeneca",
-        "repos": ["AstraZeneca"]
+        "repos": []
     },
     {
         "company": "At And T Labs-research",
@@ -221,15 +221,15 @@
     },
     {
         "company": "Audi AG",
-        "repos": ["audi","data-proxy"]
+        "repos": []
     },
     {
         "company": "Autodesk",
-        "repos": ["Autodesk", "AutodeskAILab"]
+        "repos": []
     },
     {
         "company": "Autoliv ASP Inc",
-        "repos": ["autoliv"]
+        "repos": []
     },
     {
         "company": "Autonetworks Technologies, Ltd.",
@@ -237,23 +237,23 @@
     },
     {
         "company": "Autonomous Solutions, Inc.",
-        "repos": ["asirobots"]
+        "repos": []
     },
     {
         "company": "Avago Technologies",
-        "repos": ["avago"]
+        "repos": []
     },
     {
         "company": "Avaya",
-        "repos": ["avaya"]
+        "repos": []
     },
     {
         "company": "Aveo Inc",
-        "repos": ["aveo"]
+        "repos": []
     },
     {
         "company": "Avx Corporation",
-        "repos": ["avx"]
+        "repos": []
     },
     {
         "company": "Axalta Coating Systems IP Co",
@@ -269,15 +269,15 @@
     },
     {
         "company": "BAIDU",
-        "repos": ["baidu", "baidu-research"]
+        "repos": []
     },
     {
         "company": "BASF SE",
-        "repos": ["basf"]
+        "repos": []
     },
     {
         "company": "BBN Technologies",
-        "repos": ["BBN-E", "BBN-Q", "raytheonbbn"]
+        "repos": []
     },
     {
         "company": "BOE TECHNOLOGY GROUP CO., LTD.",
@@ -285,51 +285,51 @@
     },
     {
         "company": "BOOKING.COM B.V.",
-        "repos": ["bookingcom"]
+        "repos": []
     },
     {
         "company": "BP America Inc",
-        "repos": ["bp"]
+        "repos": []
     },
     {
         "company": "Baker Hughes a GE company",
-        "repos": ["BakerHughes"]
+        "repos": []
     },
     {
         "company": "Balluff GmbH",
-        "repos": ["Balluff"]
+        "repos": []
     },
     {
         "company": "Bang and Olufsen",
-        "repos": ["bang-olufsen"]
+        "repos": []
     },
     {
         "company": "Bank of America Corporation",
-        "repos": ["bofa"]
+        "repos": []
     },
     {
         "company": "Battelle",
-        "repos": ["Battelle"]
+        "repos": []
     },
     {
         "company": "Bayer AG",
-        "repos": ["bayer-science-for-a-better-life"]
+        "repos": []
     },
     {
         "company": "Bayer Aktiengesellschaft",
-        "repos": ["bayer-science-for-a-better-life"]
+        "repos": []
     },
     {
         "company": "Becton Dickinson and Company",
-        "repos": ["bd-R"]
+        "repos": []
     },
     {
         "company": "Bell",
-        "repos": ["BellCanada", "bellflight", "bell"]
+        "repos": ["BellCanada"]
     },
     {
         "company": "Bentley Systems Incorporated",
-        "repos": ["BentleySystems"]
+        "repos": []
     },
     {
         "company": "Bernafon AG",
@@ -341,19 +341,19 @@
     },
     {
         "company": "Blizzard Entertainment",
-        "repos": ["Blizzard"]
+        "repos": []
     },
     {
         "company": "Bloomberg",
-        "repos": ["bloomberg"]
+        "repos": []
     },
     {
         "company": "Boehringer-Ingelheim",
-        "repos": ["Boehringer-Ingelheim"]
+        "repos": []
     },
     {
         "company": "Boeing Corporation",
-        "repos": ["Boeing"]
+        "repos": []
     },
     {
         "company": "Bombardier",
@@ -361,11 +361,11 @@
     },
     {
         "company": "Booz Allen Hamilton Inc",
-        "repos": ["boozallen", "booz-allen-hamilton"]
+        "repos": []
     },
     {
         "company": "Borealis",
-        "repos": ["ProjectBorealis", "borealisgroup"]
+        "repos": []
     },
     {
         "company": "Boston Scientific Scimed Inc",
@@ -381,15 +381,15 @@
     },
     {
         "company": "British Telecommunications plc",
-        "repos": ["BTplc"]
+        "repos": []
     },
     {
         "company": "Broadcom",
-        "repos": ["Broadcom","Broadcom-Switch"]
+        "repos": []
     },
     {
         "company": "Brooks Automation",
-        "repos": ["brooks-builds"]
+        "repos": []
     },
     {
         "company": "Bruker AXS GmbH",
@@ -405,11 +405,11 @@
     },
     {
         "company": "Bytedance",
-        "repos": ["bytedance"]
+        "repos": []
     },
     {
         "company": "CA Inc",
-        "repos": ["CATechnologies"]
+        "repos": []
     },
     {
         "company": "CRC CARE Pty Ltd",
@@ -417,35 +417,35 @@
     },
     {
         "company": "Ca Technologies",
-        "repos": ["CATechnologies"]
+        "repos": []
     },
     {
         "company": "Cabot Corporation",
-        "repos": ["CMU-cabot"]
+        "repos": []
     },
     {
         "company": "Cadence Design Systems Inc",
-        "repos": ["pointwise"]
+        "repos": []
     },
     {
         "company": "Canon Inc",
-        "repos": ["canon"]
+        "repos": []
     },
     {
         "company": "Capgemini",
-        "repos": ["Capgemini"]
+        "repos": []
     },
     {
         "company": "Capital One Services LLC",
-        "repos": ["capitalone"]
+        "repos": []
     },
     {
         "company": "Carl Zeiss",
-        "repos": ["ZEISS"]
+        "repos": []
     },
     {
         "company": "Carrier Corporation",
-        "repos": ["carrier-io","CARRIER-project"]
+        "repos": []
     },
     {
         "company": "Casio Computer Co., Ltd.",
@@ -453,31 +453,31 @@
     },
     {
         "company": "Caterpillar",
-        "repos": ["CaterpillarSan"]
+        "repos": []
     },
     {
         "company": "Cavium, Inc.",
-        "repos": ["cavium"]
+        "repos": []
     },
     {
         "company": "Cerner Innovation Inc",
-        "repos": ["cerner"]
+        "repos": []
     },
     {
         "company": "Charles River Analytics Inc",
-        "repos": ["charles-river-analytics","cra-ros-pkg"]
+        "repos": []
     },
     {
         "company": "Check Point Software Technologies, Inc.",
-        "repos": ["CheckPointSW"]
+        "repos": []
     },
     {
         "company": "Chevron Corporation",
-        "repos": ["ChevronETC"]
+        "repos": []
     },
     {
         "company": "China Mobile",
-        "repos": ["cmri"]
+        "repos": []
     },
     {
         "company": "Cigital",
@@ -485,19 +485,19 @@
     },
     {
         "company": "Cigna Corporation",
-        "repos": ["Cigna"]
+        "repos": []
     },
     {
         "company": "Cisco Systems",
-        "repos": ["cisco", "CiscoSystems", "CiscoDevNet", "cisco-open"]
+        "repos": []
     },
     {
         "company": "Citigroup",
-        "repos": ["Citi"]
+        "repos": []
     },
     {
         "company": "Citrix",
-        "repos": ["citrix"]
+        "repos": []
     },
     {
         "company": "Clarion Co., Ltd.",
@@ -509,15 +509,15 @@
     },
     {
         "company": "Codexis Inc",
-        "repos": ["codex-team"]
+        "repos": []
     },
     {
         "company": "Cognizant",
-        "repos": ["CognizantOpenSource", "cognizant", "Netcentric"]
+        "repos": []
     },
     {
         "company": "Comcast",
-        "repos": ["Comcast"]
+        "repos": []
     },
     {
         "company": "CommScope Technologies LLC",
@@ -525,7 +525,7 @@
     },
     {
         "company": "Computer Sciences Corporation - USA",
-        "repos": ["CAMSCSC"]
+        "repos": []
     },
     {
         "company": "Connotate, Inc.",
@@ -537,11 +537,11 @@
     },
     {
         "company": "Continental Automotive GmbH",
-        "repos": ["continental"]
+        "repos": []
     },
     {
         "company": "Corelogic Incorporated",
-        "repos": ["corelogic"]
+        "repos": []
     },
     {
         "company": "Coriant Advanced Technology LLC",
@@ -549,7 +549,7 @@
     },
     {
         "company": "Corning Incorporated",
-        "repos": ["corning-incorporated"]
+        "repos": []
     },
     {
         "company": "Cortec, L.L.C.",
@@ -561,103 +561,103 @@
     },
     {
         "company": "Cray Inc",
-        "repos": ["Cray","PE-Cray", "Cray-HPE"]
+        "repos": []
     },
     {
         "company": "Cypress Semiconductor Corporation",
-        "repos": ["cypresssemiconductorco"]
+        "repos": []
     },
     {
         "company": "D Wave Systems Inc",
-        "repos": ["dwavesystems", "dwave-examples"]
+        "repos": []
     },
     {
         "company": "DEEP GENOMICS INCORPORATED",
-        "repos": ["deepgenomics", "genomenet"]
+        "repos": []
     },
     {
         "company": "DENSO Corporation",
-        "repos": ["DensoITLab"]
+        "repos": []
     },
     {
         "company": "Daikin Industries Ltd",
-        "repos": ["daikin"]
+        "repos": []
     },
     {
         "company": "Daimler AG",
-        "repos": ["mercedes-benz"]
+        "repos": []
     },
     {
         "company": "Danaher Corporation",
-        "repos": ["Danaher"]
+        "repos": []
     },
     {
         "company": "Dassault Systemes",
-        "repos": ["DassaultSystemes-Technology"]
+        "repos": []
     },
     {
         "company": "DataRobot Inc",
-        "repos": ["datarobot"]
+        "repos": []
     },
     {
         "company": "DeepMind Technologies",
-        "repos": ["deepmind"]
+        "repos": []
     },
     {
         "company": "Deere & Company",
-        "repos": ["JohnDeere"]
+        "repos": []
     },
     {
         "company": "Definiens AG",
-        "repos": ["Definiens"]
+        "repos": []
     },
     {
         "company": "Dell Products",
-        "repos": ["dell", "dell-research-harvard"]
+        "repos": []
     },
     {
         "company": "Delphi",
-        "repos": ["cmu-delphi"]
+        "repos": []
     },
     {
         "company": "Deutsche Telekom",
-        "repos": ["telekom", "deutsche-telekom-ag", "telekom-security"]
+        "repos": []
     },
     {
         "company": "DiDi",
-        "repos": ["didi"]
+        "repos": []
     },
     {
         "company": "Digia",
-        "repos": ["digiaonline"]
+        "repos": []
     },
     {
         "company": "Digimarc Corporation",
-        "repos": ["digimarc-corp"]
+        "repos": []
     },
     {
         "company": "Disney",
-        "repos": ["disney"]
+        "repos": []
     },
     {
         "company": "Dolby",
-        "repos": ["DolbyLaboratories", "dolbyio"]
+        "repos": []
     },
     {
         "company": "Dropbox Inc",
-        "repos": ["dropbox"]
+        "repos": []
     },
     {
         "company": "DuPont",
-        "repos": ["Dupont"]
+        "repos": []
     },
     {
         "company": "E.S.I. SOFTWARE LTD",
-        "repos": ["ESI-ITI-GmbH"]
+        "repos": []
     },
     {
         "company": "EMC Corporation",
-        "repos": ["soumendus"]
+        "repos": []
     },
     {
         "company": "ENI SpA Italy",
@@ -673,15 +673,15 @@
     },
     {
         "company": "Eaton Corporation",
-        "repos": ["eaton", "Eaton-Vance-Corp"]
+        "repos": []
     },
     {
         "company": "Elbit Systems Ltd.",
-        "repos": ["ElbitSystems"]
+        "repos": []
     },
     {
         "company": "Electronic Arts",
-        "repos": ["electronicarts"]
+        "repos": []
     },
     {
         "company": "Electronic Data Systems Corporation",
@@ -689,7 +689,7 @@
     },
     {
         "company": "Elekta AB",
-        "repos": ["Elekta-research"]
+        "repos": []
     },
     {
         "company": "Element Six Technologies Limited",
@@ -701,11 +701,11 @@
     },
     {
         "company": "Elsevier",
-        "repos": ["elsevier-research","elsevierlabs-os","ElsevierDev"]
+        "repos": []
     },
     {
         "company": "Emerson Process Management Power & Water Solutions, Inc.",
-        "repos": ["emersonsoftware", "EmersonElectricCo"]
+        "repos": []
     },
     {
         "company": "Energy Conversion Devices, Inc.",
@@ -713,7 +713,7 @@
     },
     {
         "company": "Enjoyor Company Limited",
-        "repos": ["Organ-Enjoyor"]
+        "repos": []
     },
     {
         "company": "Entegris Inc",
@@ -721,11 +721,11 @@
     },
     {
         "company": "Entelos, Inc.",
-        "repos": ["entelo"]
+        "repos": []
     },
     {
         "company": "Ericsson Sweden",
-        "repos": ["EricssonResearch", "Ericsson", "esttech"]
+        "repos": []
     },
     {
         "company": "Ethicon Endo-Surgery Inc",
@@ -733,11 +733,11 @@
     },
     {
         "company": "Experian",
-        "repos": ["experianplc"]
+        "repos": []
     },
     {
         "company": "Express Scripts Holding",
-        "repos": ["ExpressScripts"]
+        "repos": []
     },
     {
         "company": "Exxon Mobil Corporation",
@@ -749,23 +749,23 @@
     },
     {
         "company": "FSI International, Inc.",
-        "repos": ["fsi-open", "fsi-tue"]
+        "repos": []
     },
     {
         "company": "FUJIFILM Corporation",
-        "repos": ["fujifilm"]
+        "repos": []
     },
     {
         "company": "Fair Isaac Corporation",
-        "repos": ["fico-xpress"]
+        "repos": []
     },
     {
         "company": "Fanuc Ltd",
-        "repos": ["fanuc"]
+        "repos": []
     },
     {
         "company": "FireEye Inc",
-        "repos": ["fireeye"]
+        "repos": []
     },
     {
         "company": "Fisher-Rosemount Systems, Inc.",
@@ -773,11 +773,11 @@
     },
     {
         "company": "Flextronics AP LLC",
-        "repos": ["flextronics"]
+        "repos": []
     },
     {
         "company": "Fluke Corporation",
-        "repos": ["fluketmc"]
+        "repos": []
     },
     {
         "company": "Fluor Corporation",
@@ -785,15 +785,15 @@
     },
     {
         "company": "Ford Motor Company",
-        "repos": ["Ford"]
+        "repos": []
     },
     {
         "company": "Freescale Semiconductor",
-        "repos": ["Freescale"]
+        "repos": []
     },
     {
         "company": "Fujitsu Ltd",
-        "repos": ["FujitsuLaboratories", "fujitsu"]
+        "repos": []
     },
     {
         "company": "Furuno Electric Co",
@@ -801,7 +801,7 @@
     },
     {
         "company": "Futurewei Tech",
-        "repos": ["futurewei-tech", "futurewei-cloud"]
+        "repos": []
     },
     {
         "company": "GE Medical Systems Information Technologies, Inc.",
@@ -809,7 +809,7 @@
     },
     {
         "company": "Gateway Inc",
-        "repos": ["gateway", "gateway-services"]
+        "repos": []
     },
     {
         "company": "General Dynamics Advanced Information Systems Inc",
@@ -817,11 +817,11 @@
     },
     {
         "company": "General Electric Company",
-        "repos": ["GeneralElectric", "geappliances"]
+        "repos": []
     },
     {
         "company": "General Motors",
-        "repos": ["generalmotors"]
+        "repos": []
     },
     {
         "company": "Github",
@@ -829,27 +829,27 @@
     },
     {
         "company": "Global Foundries Inc",
-        "repos": ["globalfoundries"]
+        "repos": []
     },
     {
         "company": "GoPro, Inc.",
-        "repos": ["gopro"]
+        "repos": []
     },
     {
         "company": "Goldman Sachs & Co",
-        "repos": ["goldmansachs"]
+        "repos": []
     },
     {
         "company": "GrammaTech",
-        "repos": ["GrammaTech"]
+        "repos": []
     },
     {
         "company": "Gravity Research and Development Kft.",
-        "repos": ["gravityrd"]
+        "repos": []
     },
     {
         "company": "Groupon, Inc.",
-        "repos": ["groupon"]
+        "repos": []
     },
     {
         "company": "Guardian Industries Corp",
@@ -857,7 +857,7 @@
     },
     {
         "company": "HERE Global BV",
-        "repos": ["heremaps"]
+        "repos": []
     },
     {
         "company": "HNC Software, Inc.",
@@ -869,11 +869,11 @@
     },
     {
         "company": "HRL Laboratories",
-        "repos": ["hrl-team", "HarritonResearchLab"]
+        "repos": []
     },
     {
         "company": "HTC",
-        "repos": ["HTC"]
+        "repos": []
     },
     {
         "company": "Hach Company",
@@ -881,11 +881,11 @@
     },
     {
         "company": "Halliburton",
-        "repos": ["Halliburton-Landmark"]
+        "repos": []
     },
     {
         "company": "Harman International Industries Incorporated",
-        "repos": ["HarmanInternational"]
+        "repos": []
     },
     {
         "company": "Harris Corporation",
@@ -893,7 +893,7 @@
     },
     {
         "company": "Hcl Technologies",
-        "repos": ["HCL-TECH-SOFTWARE", "HCL-Cloud-Native-Labs"]
+        "repos": []
     },
     {
         "company": "Healthways, Inc.",
@@ -901,7 +901,7 @@
     },
     {
         "company": "HeartFlow Inc",
-        "repos": ["HeartFlow"]
+        "repos": []
     },
     {
         "company": "Henry Ford Health System",
@@ -909,11 +909,11 @@
     },
     {
         "company": "Hewlett-Packard Inc.",
-        "repos": ["HPInc","hewlettpackard"]
+        "repos": []
     },
     {
         "company": "Hitachi Ltd",
-        "repos": ["Hitachi"]
+        "repos": []
     },
     {
         "company": "Hon Hai Precision Industry Co",
@@ -921,15 +921,15 @@
     },
     {
         "company": "Honda R and D Co",
-        "repos": ["honda-research-institute"]
+        "repos": []
     },
     {
         "company": "Honeywell International Inc",
         "repos": []
     },
     {
-        "company": "Huawei",
-        "repos": ["Huawei","huawei-noah", "huaweicloud", "Huawei-PTLab"]
+        "company": "Huawei Technologies",
+        "repos": []
     },
     {
         "company": "Hudson Co., Ltd.",
@@ -937,7 +937,7 @@
     },
     {
         "company": "Hulu",
-        "repos": ["hulu"]
+        "repos": []
     },
     {
         "company": "Hypres Inc",
@@ -949,15 +949,15 @@
     },
     {
         "company": "Hyundai Motor Group",
-        "repos": ["hyundai"]
+        "repos": []
     },
     {
         "company": "IBM",
-        "repos": ["IBM", "ibm-research", "IBMResearch", "ibm-research-tokyo"]
+        "repos": []
     },
     {
         "company": "ICF INTERNATIONAL",
-        "repos": ["ICFI"]
+        "repos": []
     },
     {
         "company": "ID QUANTIQUE",
@@ -965,23 +965,23 @@
     },
     {
         "company": "IHS Markit Ltd",
-        "repos": ["markitdigital", "ihsmarkitoss"]
+        "repos": []
     },
     {
         "company": "INFOTECH SOFT, INC.",
-        "repos": ["infotechsoft"]
+        "repos": []
     },
     {
         "company": "INTELLIGENT FUSION TECHNOLOGY INC",
-        "repos": ["IndustryFusion"]
+        "repos": []
     },
     {
         "company": "Icosystem Corporation",
-        "repos": ["icosystem"]
+        "repos": []
     },
     {
         "company": "Illumina Inc",
-        "repos": ["Illumina"]
+        "repos": []
     },
     {
         "company": "Indizen Optical Technologies of America LLC",
@@ -989,19 +989,19 @@
     },
     {
         "company": "Infineon Technologies AG",
-        "repos": ["Infineon"]
+        "repos": []
     },
     {
         "company": "Infinera Corporation",
-        "repos": ["infinera"]
+        "repos": []
     },
     {
         "company": "Infosys",
-        "repos": ["Infosys"]
+        "repos": []
     },
     {
         "company": "Ingenuity Systems, Inc.",
-        "repos": ["ingenuity-build"]
+        "repos": []
     },
     {
         "company": "Inotera Memories, Inc.",
@@ -1009,15 +1009,15 @@
     },
     {
         "company": "Intel Corporation",
-        "repos": ["intel", "intel-ai"]
+        "repos": []
     },
     {
         "company": "Intelligent Automation Inc",
-        "repos": ["intelligentautomation", "Intelligent-Automation-Centre"]
+        "repos": []
     },
     {
         "company": "Intertrust Technologies Corp.",
-        "repos": ["Inter-Trust"]
+        "repos": []
     },
     {
         "company": "Interuniversity Micro-Electronics Center at Leuven",
@@ -1029,11 +1029,11 @@
     },
     {
         "company": "Intuit Inc",
-        "repos": ["intuit", "IntuitDeveloper"]
+        "repos": []
     },
     {
         "company": "Invensense Inc",
-        "repos": ["InvenSenseInc"]
+        "repos": []
     },
     {
         "company": "Invensys Systems, Inc.",
@@ -1041,7 +1041,7 @@
     },
     {
         "company": "Israel Aerospace Industries Ltd",
-        "repos": ["IAI-Cyber"]
+        "repos": []
     },
     {
         "company": "JFE Steel Corporation",
@@ -1049,7 +1049,7 @@
     },
     {
         "company": "JPMorgan Chase Bank",
-        "repos": ["jpmorganchase"]
+        "repos": []
     },
     {
         "company": "JVC KENWOOD Corporation",
@@ -1057,23 +1057,23 @@
     },
     {
         "company": "Janssen-Cilag",
-        "repos": ["janssen"]
+        "repos": []
     },
     {
         "company": "Johnson & Johnson Pharmaceutical Research & Development Raritan",
-        "repos": ["johnsonandjohnson"]
+        "repos": []
     },
     {
         "company": "Johnson Controls",
-        "repos": ["johnsoncontrols"]
+        "repos": []
     },
     {
         "company": "Juniper Networks Inc",
-        "repos": ["Juniper", "JNPRAutomate"]
+        "repos": []
     },
     {
         "company": "Justsystem Corporation",
-        "repos": ["JustSystems"]
+        "repos": []
     },
     {
         "company": "KDDI Corporation",
@@ -1085,7 +1085,7 @@
     },
     {
         "company": "KT Corporation",
-        "repos": ["k-t-corp"]
+        "repos": []
     },
     {
         "company": "KYOCERA Document Solutions Inc.",
@@ -1093,27 +1093,27 @@
     },
     {
         "company": "Kabushiki Kaisha Yaskawa Denki",
-        "repos": ["Yaskawa-Global"]
+        "repos": []
     },
     {
         "company": "Kakao Corp",
-        "repos": ["kakao", "kakaoenterprise", "kakaobrain"]
+        "repos": []
     },
     {
         "company": "Kansai Paint Co., Ltd.",
-        "repos": ["kansai-pm"]
+        "repos": []
     },
     {
         "company": "Kia Motors Corporation",
-        "repos": ["kia"]
+        "repos": []
     },
     {
         "company": "Kimberly-Clark Worldwide Inc",
-        "repos": ["kimberly-clark"]
+        "repos": []
     },
     {
         "company": "Kitware",
-        "repos": ["Kitware"]
+        "repos": []
     },
     {
         "company": "Koch Industries, Inc.",
@@ -1121,11 +1121,11 @@
     },
     {
         "company": "Kone Corporation",
-        "repos": ["konecorp"]
+        "repos": []
     },
     {
         "company": "Kongsberg Maritime AS",
-        "repos": ["kongsberg"]
+        "repos": []
     },
     {
         "company": "Konica Minolta Laboratory",
@@ -1137,7 +1137,7 @@
     },
     {
         "company": "L'Oreal",
-        "repos": ["Loreal"]
+        "repos": []
     },
     {
         "company": "L-3 Communications",
@@ -1145,7 +1145,7 @@
     },
     {
         "company": "LENOVO",
-        "repos": ["lenovo"]
+        "repos": []
     },
     {
         "company": "LEUKOCARE AG",
@@ -1153,11 +1153,11 @@
     },
     {
         "company": "LG Chem Ltd",
-        "repos": ["lgchem"]
+        "repos": []
     },
     {
         "company": "LG Electronics Korea",
-        "repos": ["LGE-OSS", "lgcnsai"]
+        "repos": []
     },
     {
         "company": "LSI Logic Corporation",
@@ -1169,7 +1169,7 @@
     },
     {
         "company": "Lattec IS",
-        "repos": ["lattice"]
+        "repos": []
     },
     {
         "company": "Lear Corporation",
@@ -1177,7 +1177,7 @@
     },
     {
         "company": "Lego AS",
-        "repos": ["LEGO"]
+        "repos": []
     },
     {
         "company": "Lehman Brothers",
@@ -1185,7 +1185,7 @@
     },
     {
         "company": "Leidos Inc",
-        "repos": ["leidosinc", "leidos", "LeidosLabs"]
+        "repos": []
     },
     {
         "company": "Lexis Nexis",
@@ -1193,15 +1193,15 @@
     },
     {
         "company": "Life Technologies Corporation",
-        "repos": ["LIFECorp"]
+        "repos": []
     },
     {
         "company": "Lincom Corporation",
-        "repos": ["Lincom"]
+        "repos": []
     },
     {
         "company": "LinkedIn",
-        "repos": ["linkedin"]
+        "repos": []
     },
     {
         "company": "Lite-On It Corporation",
@@ -1209,27 +1209,27 @@
     },
     {
         "company": "Livermore Software Technology Corp",
-        "repos": ["LLNL"]
+        "repos": []
     },
     {
         "company": "Lockheed Martin Corporation",
-        "repos": ["lmco"]
+        "repos": []
     },
     {
         "company": "Logitech",
-        "repos": ["Logitech"]
+        "repos": []
     },
     {
         "company": "Lowe's Companies, Inc.",
-        "repos": ["lowes"]
+        "repos": []
     },
     {
         "company": "Lunit Inc",
-        "repos": ["lunit-io"]
+        "repos": []
     },
     {
         "company": "Lyft",
-        "repos": ["lyft"]
+        "repos": []
     },
     {
         "company": "MBDA France",
@@ -1253,11 +1253,11 @@
     },
     {
         "company": "Massachusetts Mutual Life Insurance Company",
-        "repos": ["massmutual"]
+        "repos": []
     },
     {
         "company": "Materialise",
-        "repos": ["materializecss", "MaterializeInc", "materialize"]
+        "repos": []
     },
     {
         "company": "Materialise N.V.",
@@ -1265,7 +1265,7 @@
     },
     {
         "company": "MathWorks",
-        "repos": ["mathworks"]
+        "repos": []
     },
     {
         "company": "Maxtor Corporation",
@@ -1273,11 +1273,11 @@
     },
     {
         "company": "Mazda Motor",
-        "repos": ["mazda"]
+        "repos": []
     },
     {
         "company": "McDonald's",
-        "repos": ["mcdcorp","mcdonalds"]
+        "repos": []
     },
     {
         "company": "McKesson Financial Holdings",
@@ -1285,7 +1285,7 @@
     },
     {
         "company": "McKinsey & Company",
-        "repos": ["mckinseyacademy"]
+        "repos": []
     },
     {
         "company": "MedImmune Inc",
@@ -1293,11 +1293,11 @@
     },
     {
         "company": "Mediatek Inc",
-        "repos": ["MediaTek-Labs", "mediatek", "MTKOSP"]
+        "repos": []
     },
     {
         "company": "Medtronic Inc",
-        "repos": ["medtronic"]
+        "repos": []
     },
     {
         "company": "Medtronic, Inc.",
@@ -1309,7 +1309,7 @@
     },
     {
         "company": "Merck",
-        "repos": ["Merck"]
+        "repos": []
     },
     {
         "company": "Metso Automation USA Inc.",
@@ -1317,55 +1317,55 @@
     },
     {
         "company": "Micron",
-        "repos": ["micron", "micronDLA"]
+        "repos": []
     },
     {
         "company": "Microstrategy, Inc.",
-        "repos": ["MicroStrategy"]
+        "repos": []
     },
     {
         "company": "Midea Group",
-        "repos": ["midea"]
+        "repos": []
     },
     {
         "company": "Mitel Networks",
-        "repos": ["mitel-networks"]
+        "repos": []
     },
     {
         "company": "Mitsubishi Electric Corporation",
-        "repos": ["MEAE-GOT"]
+        "repos": []
     },
     {
         "company": "Morgan Stanley",
-        "repos": ["MorganStanley"]
+        "repos": []
     },
     {
         "company": "Motorola",
-        "repos": ["MotorolaMobilityLLC", "MotorolaMobilityLLC"]
+        "repos": []
     },
     {
         "company": "Mozilla",
-        "repos": ["mozilla", "mozillascience", "MozillaFoundation"]
+        "repos": []
     },
     {
         "company": "NCR Corporation",
-        "repos": ["NCR-Corporation"]
+        "repos": []
     },
     {
         "company": "NEC Corporation",
-        "repos": ["nec-corp", "nec-research"]
+        "repos": []
     },
     {
         "company": "NETFLIX INC",
-        "repos": ["netflix"]
+        "repos": []
     },
     {
         "company": "NIKE, Inc.",
-        "repos": ["Nike-Inc"]
+        "repos": []
     },
     {
         "company": "NUTONIAN, INC.",
-        "repos": ["nutonian"]
+        "repos": []
     },
     {
         "company": "NVIDIA",
@@ -1373,7 +1373,7 @@
     },
     {
         "company": "NXP Semiconductors",
-        "repos": ["NXP"]
+        "repos": []
     },
     {
         "company": "Nalco Company",
@@ -1385,7 +1385,7 @@
     },
     {
         "company": "Narus, Inc.",
-        "repos": ["narus-knowledge"]
+        "repos": []
     },
     {
         "company": "Natera Inc",
@@ -1393,23 +1393,23 @@
     },
     {
         "company": "National Instruments Corporation",
-        "repos": ["ni"]
+        "repos": []
     },
     {
         "company": "Natural Selection Inc",
-        "repos": ["natural-selection", "NaturalSelectionLabs"]
+        "repos": []
     },
     {
         "company": "Naver Corporation",
-        "repos": ["naver"]
+        "repos": []
     },
     {
         "company": "Nestor, Inc.",
-        "repos": ["Nestor"]
+        "repos": []
     },
     {
         "company": "NetApp",
-        "repos": ["NetApp", "NetApp-Automation"]
+        "repos": []
     },
     {
         "company": "Nidec Motor",
@@ -1421,27 +1421,27 @@
     },
     {
         "company": "Nikon",
-        "repos": ["nikon"]
+        "repos": []
     },
     {
         "company": "Nippon Telegraph and Telephone Corporation",
-        "repos": ["nttcom", "nttcslab"]
+        "repos": []
     },
     {
         "company": "Nissan",
-        "repos": ["nissan"]
+        "repos": []
     },
     {
         "company": "Nokia Corporation",
-        "repos": ["nokia"]
+        "repos": []
     },
     {
         "company": "Nortel Networks",
-        "repos": ["nortel"]
+        "repos": []
     },
     {
         "company": "Northrop Grumman corporation",
-        "repos": ["NorthropGrumman"]
+        "repos": []
     },
     {
         "company": "Novartis International AG",
@@ -1449,31 +1449,31 @@
     },
     {
         "company": "Novatek Microelectronics Corp",
-        "repos": ["novatek"]
+        "repos": []
     },
     {
         "company": "Novell, Inc.",
-        "repos": ["novell"]
+        "repos": []
     },
     {
         "company": "Novo Nordisk",
-        "repos": ["novonordisk-research"]
+        "repos": []
     },
     {
         "company": "NuTech Solutions GmbH",
-        "repos": ["nutechsoftware"]
+        "repos": []
     },
     {
         "company": "Nuance Communications",
-        "repos": ["nuance-communications"]
+        "repos": []
     },
     {
         "company": "Numerica Corp",
-        "repos": ["numerica"]
+        "repos": []
     },
     {
         "company": "Nutanix Inc",
-        "repos": ["nutanix"]
+        "repos": []
     },
     {
         "company": "OFS FITEL LLC",
@@ -1481,7 +1481,7 @@
     },
     {
         "company": "OPTUM INC",
-        "repos": ["Optum"]
+        "repos": []
     },
     {
         "company": "Oki Electric Industry",
@@ -1489,23 +1489,23 @@
     },
     {
         "company": "Olympus Corporation",
-        "repos": ["olympus"]
+        "repos": []
     },
     {
         "company": "Omron Adept Technologies Inc",
-        "repos": ["omron"]
+        "repos": []
     },
     {
         "company": "Open Text Corporation",
-        "repos": ["opentext"]
+        "repos": []
     },
     {
         "company": "OpenAI",
-        "repos": ["openai"]
+        "repos": []
     },
     {
         "company": "Oracle",
-        "repos": ["oracle"]
+        "repos": []
     },
     {
         "company": "Orbotech Ltd",
@@ -1513,7 +1513,7 @@
     },
     {
         "company": "Osaro",
-        "repos": ["OsaroAI"]
+        "repos": []
     },
     {
         "company": "PARC",
@@ -1521,15 +1521,15 @@
     },
     {
         "company": "PDF Solutions, Inc.",
-        "repos": ["pdf"]
+        "repos": []
     },
     {
         "company": "PEARSON EDUCATION INC",
-        "repos": ["PearsonEducation"]
+        "repos": []
     },
     {
         "company": "PGS Geophysical AS",
-        "repos": ["PGSSoft", "pgs"]
+        "repos": []
     },
     {
         "company": "PPG Industries Ohio Inc",
@@ -1537,15 +1537,15 @@
     },
     {
         "company": "PREFERRED NETWORKS INC",
-        "repos": ["pfnet", "pfnet-research"]
+        "repos": []
     },
     {
         "company": "PTC Inc",
-        "repos": ["PTCInc", "PTC-Global"]
+        "repos": []
     },
     {
         "company": "Palo Alto Networks",
-        "repos": ["PaloAltoNetworks"]
+        "repos": []
     },
     {
         "company": "Palomar Technology, LLC",
@@ -1553,23 +1553,23 @@
     },
     {
         "company": "Panasonic Corporation",
-        "repos": ["panasonic-corporation"]
+        "repos": []
     },
     {
         "company": "Pandora Media Inc",
-        "repos": ["PandoraMedia"]
+        "repos": []
     },
     {
         "company": "Pavilion Technologies",
-        "repos": ["paviliondev"]
+        "repos": []
     },
     {
         "company": "Pearson plc",
-        "repos": ["Pearson-Higher-Ed", "pearsonlab"]
+        "repos": []
     },
     {
         "company": "Petroleum Geo-Services ASA",
-        "repos": ["GeoServices"]
+        "repos": []
     },
     {
         "company": "Petronas Carigali Sdn Bhd",
@@ -1577,19 +1577,19 @@
     },
     {
         "company": "Pfizer",
-        "repos": ["pfizer-opensource", "pfizer"]
+        "repos": []
     },
     {
         "company": "Philip Morris Products",
-        "repos": ["philipmorrisintl"]
+        "repos": []
     },
     {
         "company": "Philips Research",
-        "repos": ["philips-software", "philips-labs"]
+        "repos": []
     },
     {
         "company": "Pinterest",
-        "repos": ["pinterest"]
+        "repos": []
     },
     {
         "company": "Pioneer Hi-Bred International, Inc.",
@@ -1597,11 +1597,11 @@
     },
     {
         "company": "Pitney Bowes Inc",
-        "repos": ["PitneyBowes"]
+        "repos": []
     },
     {
         "company": "Posco",
-        "repos": ["posco"]
+        "repos": []
     },
     {
         "company": "Pratt and Whitney",
@@ -1609,11 +1609,11 @@
     },
     {
         "company": "ProMOS Technologies Inc.",
-        "repos": ["promos"]
+        "repos": []
     },
     {
         "company": "Procter & Gamble",
-        "repos": ["procter-gamble", "procter-gamble-tech"]
+        "repos": []
     },
     {
         "company": "Progenics Pharmaceuticals Inc",
@@ -1621,19 +1621,19 @@
     },
     {
         "company": "Progressive",
-        "repos": ["Progressive-Insurance", "progressive"]
+        "repos": []
     },
     {
         "company": "QinetiQ",
-        "repos": ["QinetiQ-Cyber-Intelligence"]
+        "repos": []
     },
     {
         "company": "Qualcomm Incorporated",
-        "repos": ["qualcomm", "Qualcomm-AI-research"]
+        "repos": []
     },
     {
         "company": "Quanta Computer",
-        "repos": ["quanta-bmc", "quanta-computing"]
+        "repos": []
     },
     {
         "company": "Quicksilver Technology, Inc.",
@@ -1641,11 +1641,11 @@
     },
     {
         "company": "REPSOL",
-        "repos": ["repsol"]
+        "repos": []
     },
     {
         "company": "Rakuten",
-        "repos": ["rakutentech", "rakuten"]
+        "repos": []
     },
     {
         "company": "Rambus Inc",
@@ -1653,7 +1653,7 @@
     },
     {
         "company": "Raytheon",
-        "repos": ["raytheonbbn"]
+        "repos": []
     },
     {
         "company": "Recommind, Inc.",
@@ -1661,7 +1661,7 @@
     },
     {
         "company": "Red Hat Inc",
-        "repos": ["RedHatOfficial", "redhat-developer", "red-hat"]
+        "repos": []
     },
     {
         "company": "Reliance Electric Technologies, LLC",
@@ -1673,7 +1673,7 @@
     },
     {
         "company": "Renesas Electronics Corporation",
-        "repos": ["renesas", "renesas-rx"]
+        "repos": []
     },
     {
         "company": "Research In Motion Limited",
@@ -1681,19 +1681,19 @@
     },
     {
         "company": "Ricoh",
-        "repos": ["ricohapi", "ricoh"]
+        "repos": []
     },
     {
         "company": "Rigetti Computing",
-        "repos": ["rigetti", "rigetti-computing"]
+        "repos": []
     },
     {
         "company": "Robert Bosch GmbH",
-        "repos": ["boschresearch", "boschglobal", "bosch-ros-pkg", "bosch-io"]
+        "repos": []
     },
     {
         "company": "Rockwell Automation",
-        "repos": ["RockwellAutomation"]
+        "repos": []
     },
     {
         "company": "Rockwell Collins Inc",
@@ -1701,35 +1701,35 @@
     },
     {
         "company": "Rohde & Schwarz GmbH",
-        "repos": ["Rohde-Schwarz"]
+        "repos": []
     },
     {
         "company": "Rolls Royce",
-        "repos": ["rolls-royce", "rrglobal"]
+        "repos": []
     },
     {
         "company": "SAAB AB",
-        "repos": ["saab"]
+        "repos": []
     },
     {
         "company": "SAIC",
-        "repos": ["saic-oss"]
+        "repos": []
     },
     {
         "company": "SAP AG",
-        "repos": ["SAP"]
+        "repos": []
     },
     {
         "company": "SAS Institute",
-        "repos": ["sassoftware"]
+        "repos": []
     },
     {
         "company": "SK Hynix Inc",
-        "repos": ["skhynix"]
+        "repos": []
     },
     {
         "company": "SK Telecom Co",
-        "repos": ["sktelecom"]
+        "repos": []
     },
     {
         "company": "SMART INFORMATION FLOW TECHNOLGIES, LLC",
@@ -1737,23 +1737,23 @@
     },
     {
         "company": "SOFTBANK ROBOTICS EUROPE",
-        "repos": ["softbankrobotics-research", "softbankrobotics-labs"]
+        "repos": []
     },
     {
         "company": "SPOTIFY AB",
-        "repos": ["spotify-research", "spotify"]
+        "repos": []
     },
     {
         "company": "SPX Corporation",
-        "repos": ["spx"]
+        "repos": []
     },
     {
         "company": "SRC Inc",
-        "repos": ["src"]
+        "repos": []
     },
     {
         "company": "SRI International",
-        "repos": ["SRI-CSL"]
+        "repos": []
     },
     {
         "company": "STATE GRID JIANGSU ELECTRIC POWER COMPANY NAN JING POWER SUPPLY COMPANY",
@@ -1761,7 +1761,7 @@
     },
     {
         "company": "STMicroelectronics",
-        "repos": ["STMicroelectronics", "STMicroelectronics-CentralLabs"]
+        "repos": []
     },
     {
         "company": "STROZ FRIEDBERG, LLC",
@@ -1769,15 +1769,15 @@
     },
     {
         "company": "Samsung Electronics",
-        "repos": ["Samsung", "SamsungLabs"]
+        "repos": []
     },
     {
         "company": "Sandia National Laboratories, New Mexico",
-        "repos": ["sandialabs"]
+        "repos": []
     },
     {
         "company": "Sanofi",
-        "repos": ["Sanofi-IADC", "sanofi"]
+        "repos": []
     },
     {
         "company": "Sanyo Electric Co., Ltd.",
@@ -1785,7 +1785,7 @@
     },
     {
         "company": "Sarnoff Corporation",
-        "repos": ["sarnoff"]
+        "repos": []
     },
     {
         "company": "Saudi Arabian Oil Company",
@@ -1793,19 +1793,19 @@
     },
     {
         "company": "Schlumberger Limited",
-        "repos": ["Schlumberger"]
+        "repos": []
     },
     {
         "company": "Schneider Electric Automation GmbH",
-        "repos": ["Schneider-electric"]
+        "repos": []
     },
     {
         "company": "Schneider Electric USA Inc",
-        "repos": ["schneider"]
+        "repos": []
     },
     {
         "company": "Seagate Technology USA",
-        "repos": ["Seagate"]
+        "repos": []
     },
     {
         "company": "Securboration, Inc.",
@@ -1825,19 +1825,19 @@
     },
     {
         "company": "Sensetime",
-        "repos": ["Sense-X", "bigvideoresearch"]
+        "repos": []
     },
     {
         "company": "Sensis Corporation",
-        "repos": ["sensics"]
+        "repos": []
     },
     {
         "company": "Sensys Medical, Inc.",
-        "repos": ["sensynehealth"]
+        "repos": []
     },
     {
         "company": "Sharp Corporation",
-        "repos": ["sharp"]
+        "repos": []
     },
     {
         "company": "Sharper Image Corporation",
@@ -1845,7 +1845,7 @@
     },
     {
         "company": "Shell Oil Company",
-        "repos": ["oilshell", "Shell-Company"]
+        "repos": []
     },
     {
         "company": "Siemens AG",
@@ -1853,7 +1853,7 @@
     },
     {
         "company": "Sift LLC",
-        "repos": ["SiftScience"]
+        "repos": []
     },
     {
         "company": "Sigma Space Corporation",
@@ -1861,7 +1861,7 @@
     },
     {
         "company": "Silicon Graphics Inc",
-        "repos": ["sgidevnet"]
+        "repos": []
     },
     {
         "company": "Singapore Health Services Pte Ltd",
@@ -1877,7 +1877,7 @@
     },
     {
         "company": "Snap Inc",
-        "repos": ["Snapchat", "snap-research"]
+        "repos": []
     },
     {
         "company": "Sony Corporation",
@@ -1885,11 +1885,11 @@
     },
     {
         "company": "Splunk Inc",
-        "repos": ["splunk"]
+        "repos": []
     },
     {
         "company": "Sprint Corporation",
-        "repos": ["Sprint-Core"]
+        "repos": []
     },
     {
         "company": "State Grid Corporation of China",
@@ -1897,7 +1897,7 @@
     },
     {
         "company": "Stryker Corporation",
-        "repos": ["stryker-project"]
+        "repos": []
     },
     {
         "company": "Sumitomo Wiring Systems, Ltd.",
@@ -1905,23 +1905,23 @@
     },
     {
         "company": "Sun Microsystems",
-        "repos": ["sun-microsystems"]
+        "repos": []
     },
     {
         "company": "Swisscom AG",
-        "repos": ["swisscom-blockchain", "swisscom", "SwisscomTrustServices"]
+        "repos": []
     },
     {
         "company": "Sybase Incorporated",
-        "repos": ["sybase"]
+        "repos": []
     },
     {
         "company": "Symantec",
-        "repos": ["Symantec"]
+        "repos": []
     },
     {
         "company": "Synopsys Incorporated",
-        "repos": ["Synopsys-SIG"]
+        "repos": []
     },
     {
         "company": "Sysmex Corporation",
@@ -1933,11 +1933,11 @@
     },
     {
         "company": "TOTAL SA",
-        "repos": ["total-sa"]
+        "repos": []
     },
     {
         "company": "TURBOMECA",
-        "repos": ["TurboMech"]
+        "repos": []
     },
     {
         "company": "Taiheiyo Cement Corporation",
@@ -1945,11 +1945,11 @@
     },
     {
         "company": "Tata Consultancy Services India",
-        "repos": ["tata-consultancy-services"]
+        "repos": []
     },
     {
         "company": "Technicolor",
-        "repos": ["technicolor"]
+        "repos": []
     },
     {
         "company": "Telcordia Technologies, Inc.",
@@ -1957,11 +1957,11 @@
     },
     {
         "company": "Telefonica SA",
-        "repos": ["Telefonica"]
+        "repos": []
     },
     {
         "company": "Tencent",
-        "repos": ["Tencent", "TencentCloud", "tencent-ailab"]
+        "repos": []
     },
     {
         "company": "Tennessee Valley Authority",
@@ -1969,35 +1969,35 @@
     },
     {
         "company": "Teradata US Inc",
-        "repos": ["Teradata"]
+        "repos": []
     },
     {
         "company": "Teradyne Inc",
-        "repos": ["teradyne"]
+        "repos": []
     },
     {
         "company": "Tesla",
-        "repos": ["teslamotors"]
+        "repos": []
     },
     {
         "company": "Texas Instruments",
-        "repos": ["TexasInstruments"]
+        "repos": []
     },
     {
         "company": "Thales Group",
-        "repos": ["ThalesGroup"]
+        "repos": []
     },
     {
         "company": "The Boston Consulting Group Inc",
-        "repos": ["boston-consulting-group", "bcg"]
+        "repos": []
     },
     {
         "company": "The Boston Consulting Group, Inc.",
-        "repos": ["boston-consulting-group", "bcg"]
+        "repos": []
     },
     {
         "company": "The Nielsen Company (US) LLC",
-        "repos": ["nielsen-oss"]
+        "repos": []
     },
     {
         "company": "Therma-Wave, Inc.",
@@ -2005,11 +2005,11 @@
     },
     {
         "company": "Thermo Fisher Scientific",
-        "repos": ["thermofisher", "thermofisherlsms"]
+        "repos": []
     },
     {
         "company": "Thomson Reuters",
-        "repos": ["thomsonreuters"]
+        "repos": []
     },
     {
         "company": "Tokyo Electron",
@@ -2017,35 +2017,35 @@
     },
     {
         "company": "Toshiba Corporation",
-        "repos": ["toshiba", "toshiba-bril"]
+        "repos": []
     },
     {
         "company": "Toyota Motor Corporation",
-        "repos": ["toyota", "TRI-ML", "ToyotaResearchInstitute", "TRI-AMDD"]
+        "repos": []
     },
     {
         "company": "Trend Micro Incorporated",
-        "repos": ["trendmicro"]
+        "repos": []
     },
     {
         "company": "Trilogy Development Group, Inc.",
-        "repos": ["trilogy-group"]
+        "repos": []
     },
     {
         "company": "Trimble Navigation Limited",
-        "repos": ["trimble"]
+        "repos": []
     },
     {
         "company": "Twitter",
-        "repos": ["twitter"]
+        "repos": []
     },
     {
         "company": "UBS AG",
-        "repos": ["UBS-IB"]
+        "repos": []
     },
     {
         "company": "UOP LLC",
-        "repos": ["uop"]
+        "repos": []
     },
     {
         "company": "UTC Fire & Security Corporation",
@@ -2053,7 +2053,7 @@
     },
     {
         "company": "Uber",
-        "repos": ["uber", "uber-go", "uber-research"]
+        "repos": []
     },
     {
         "company": "Unisearch Associates",
@@ -2061,7 +2061,7 @@
     },
     {
         "company": "Unisys Corporation",
-        "repos": ["Unisys"]
+        "repos": []
     },
     {
         "company": "United Microelectronics Corp",
@@ -2073,15 +2073,15 @@
     },
     {
         "company": "VECNA TECHNOLOGIES INC",
-        "repos": ["vecnatechnologies"]
+        "repos": []
     },
     {
         "company": "VERISIGN, INC.",
-        "repos": ["verisign"]
+        "repos": []
     },
     {
         "company": "Varian Medical Systems Inc",
-        "repos": ["VarianAPIs"]
+        "repos": []
     },
     {
         "company": "Veracyte Inc",
@@ -2093,23 +2093,23 @@
     },
     {
         "company": "Verily Life Sciences LLC",
-        "repos": ["verilylifesciences"]
+        "repos": []
     },
     {
         "company": "Verity, Inc.",
-        "repos": ["VerityIncorporated"]
+        "repos": []
     },
     {
         "company": "Verizon Communications",
-        "repos": ["Verizon"]
+        "repos": []
     },
     {
         "company": "Vermillion Inc",
-        "repos": ["vermillion-excl"]
+        "repos": []
     },
     {
         "company": "ViaSat Inc",
-        "repos": ["Viasat"]
+        "repos": []
     },
     {
         "company": "Victor Company of Japan, Ltd.",
@@ -2117,39 +2117,39 @@
     },
     {
         "company": "Vodafone",
-        "repos": ["Vodafone", "vodafone-chair"]
+        "repos": []
     },
     {
         "company": "Volkswagen",
-        "repos": ["volkswagen"]
+        "repos": []
     },
     {
         "company": "Volvo",
-        "repos": ["volvo-cars"]
+        "repos": []
     },
     {
         "company": "Vulcan Inc",
-        "repos": ["vulcan"]
+        "repos": []
     },
     {
         "company": "WSI Corporation",
-        "repos": ["wsi"]
+        "repos": []
     },
     {
         "company": "Walmart",
-        "repos": ["walmartlabs", "walmart", "walmartdigital"]
+        "repos": []
     },
     {
         "company": "Waymo LLC",
-        "repos": ["waymo", "waymo-research"]
+        "repos": []
     },
     {
         "company": "Wells Fargo",
-        "repos": ["wells-fargo"]
+        "repos": []
     },
     {
         "company": "Western Digital Technologies Inc",
-        "repos": ["westerndigitalcorporation"]
+        "repos": []
     },
     {
         "company": "WesternGeco LLC",
@@ -2161,55 +2161,55 @@
     },
     {
         "company": "Whirlpool",
-        "repos": ["whrlpl"]
+        "repos": []
     },
     {
         "company": "Winbond Electronics Corp.",
-        "repos": ["winbond"]
+        "repos": []
     },
     {
         "company": "Wipro Limited",
-        "repos": ["WiproOpenSource"]
+        "repos": []
     },
     {
         "company": "Wistron Corporation",
-        "repos": ["wistron-corporation"]
+        "repos": []
     },
     {
         "company": "Wolfram Research Inc",
-        "repos": ["WolframResearch"]
+        "repos": []
     },
     {
         "company": "Xerox Corporation",
-        "repos": ["xeroxinteractive"]
+        "repos": []
     },
     {
         "company": "Xilinx Inc",
-        "repos": ["Xilinx"]
+        "repos": []
     },
     {
         "company": "YANDEX EUROPE AG",
-        "repos": ["yandex"]
+        "repos": []
     },
     {
         "company": "Yahoo Inc",
-        "repos": ["yahoo", "yahoojapan", "YahooArchive"]
+        "repos": []
     },
     {
         "company": "Yamaha Corporation",
-        "repos": ["yamaha-network"]
+        "repos": []
     },
     {
         "company": "Yokogawa Electric Corporation",
-        "repos": ["yokogawa"]
+        "repos": []
     },
     {
         "company": "Zoox",
-        "repos": ["Zoox"]
+        "repos": []
     },
     {
         "company": "Zte",
-        "repos": ["ZTE", "zte-opensource"]
+        "repos": []
     },
     {
         "company": "cogvis",
@@ -2217,7 +2217,7 @@
     },
     {
         "company": "eBay",
-        "repos": ["eBay"]
+        "repos": []
     },
     {
         "company": "exact sciences corporation",
@@ -2229,7 +2229,7 @@
     },
     {
         "company": "google",
-        "repos": ["google", "GoogleCloudPlatform", "google-research"]
+        "repos": []
     },
     {
         "company": "hellenic telecommunications",
@@ -2241,7 +2241,7 @@
     },
     {
         "company": "hsbc",
-        "repos": ["hsbc"]
+        "repos": []
     },
     {
         "company": "i2 technologies",
@@ -2249,7 +2249,7 @@
     },
     {
         "company": "iRobot Corporation",
-        "repos": ["iRobotCorporation"]
+        "repos": []
     },
     {
         "company": "knexus research corp",
@@ -2257,11 +2257,11 @@
     },
     {
         "company": "marvell semiconductor",
-        "repos": ["MarvellEmbeddedProcessors"]
+        "repos": []
     },
     {
         "company": "mellanox technologies israel",
-        "repos": ["Mellanox"]
+        "repos": []
     },
     {
         "company": "novamente llc",
@@ -2269,43 +2269,43 @@
     },
     {
         "company": "osram corporate",
-        "repos": ["osram"]
+        "repos": []
     },
     {
         "company": "pricewaterhousecoopers",
-        "repos": ["pwc"]
+        "repos": []
     },
     {
         "company": "profactor gmbh",
-        "repos": ["Profactor"]
+        "repos": []
     },
     {
         "company": "realtek semiconductor",
-        "repos": ["Realtek-OpenSource"]
+        "repos": []
     },
     {
         "company": "salesforce.com, inc.",
-        "repos": ["salesforce", "developerforce"]
+        "repos": []
     },
     {
         "company": "sogou inc",
-        "repos": ["sogou"]
+        "repos": []
     },
     {
         "company": "tomtom",
-        "repos": ["tomtom-international"]
+        "repos": []
     },
     {
         "company": "ubitech ltd",
-        "repos": ["ubitech"]
+        "repos": []
     },
     {
         "company": "vermillion inc",
-        "repos": ["vermillion-excl"]
+        "repos": []
     },
     {
         "company": "Deloitte",
-        "repos": ["deloitte", "DeloitteDigitalUK"]
+        "repos": []
     },
     {
         "company": "Facebook",
@@ -2313,6 +2313,6 @@
     },
     {
         "company": "Microsoft",
-        "repos": ["microsoft", "MicrosoftLearning", "MicrosoftResearch"]
+        "repos": []
     }
 ]

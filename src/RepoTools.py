@@ -7,7 +7,7 @@ from github import Github
 from tqdm import tqdm
 import pickle
 import pandas as pd
-from github.GithubException import UnknownObjectException
+from github.GithubException import UnknownObjectException, GithubException
 from config import * 
 import os, sys 
 import re
@@ -81,7 +81,11 @@ class RepoTools:
         """
         extendedRepoWithReadMes = []
         for repoWithReadme in tqdm(repoWithReadmes): 
-            readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            try:
+                readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            except AssertionError:
+                readme = ""
+
             repoName = repoWithReadme["repo"].full_name
             # try to find the title using the patterns
             paperTitles = RepoTools.getPaperTitlesFromReadme(readme)
@@ -112,6 +116,8 @@ class RepoTools:
                 extraRepos.append(RepoTools.github.get_repo(link))
             except UnknownObjectException:
                 print('Could not find repository for this link : ' + link)
+            except GithubException:
+                print('Could not find repository for this link : ' + link)
         extraRepos = [repo for repo in extraRepos if repo not in repos]
         extraRepoWithReadmes = RepoTools.getRepoWithReadmes(extraRepos)
         repoWithReadmes.extend(extraRepoWithReadmes)
@@ -129,7 +135,10 @@ class RepoTools:
         """
         githubLinks = []
         for repoWithReadme in repoWithReadmes:
-            readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            try:
+                readme = str(repoWithReadme["readme"].decoded_content.decode("utf-8"))
+            except AssertionError:
+                readme = ""
             repoName = repoWithReadme["repo"].full_name
             githubLinks.extend(RepoTools.getGithubLinksFromReadme(repoName, readme))
 
@@ -205,7 +214,11 @@ class RepoTools:
         print('Fetching the readmes from the repos')
         repoWithReadmes = []
         for repo in tqdm(repos):
-            readme = RepoTools.getReadmeFromRepo(repo)
+            try:
+                readme = RepoTools.getReadmeFromRepo(repo)
+            except GithubException:
+                print(f"Could not find readme for {repo.full_name}")
+                readme = None
             if readme:
                 repoWithReadmes.append({"repo": repo, "readme": readme})
         
@@ -221,6 +234,10 @@ class RepoTools:
         try:
             readme = repo.get_readme()
         except UnknownObjectException:
+            print('Could not find readme for this link : ' + repo.html_url)
+            return None
+        except GithubException:
+            print('Could not find readme for this link : ' + repo.html_url)
             return None
         return readme
     
@@ -393,7 +410,10 @@ class RepoTools:
 
         # we need to drop the rows with href in the title (these are not papers)
         # need to fix this
-        df = df.drop(df[df['title'].str.contains('href')].index)
+        try:
+            df = df.drop(df[df['title'].str.contains('href')].index)
+        except AttributeError:
+            print("DF is empty!")
         return df
     
     @staticmethod
