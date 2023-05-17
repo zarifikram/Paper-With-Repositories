@@ -11,7 +11,35 @@ class DataCleaner:
 
     
     companyToRepos = Extractor.getConfig()
+    
+    @staticmethod
+    def getAllMatchingPapersInfo(companyDf):
+        """
+            Returns a df with all the matched papers info
+        """
+        cids = DataCleaner.getUniqueCids(companyDf)
+        dfs = []
+        for cid in tqdm(cids):
+            df = DataCleaner.getMatchingPaperInfoByCid(companyDf, cid)
+            dfs.append(df)
+        
+        finalDf = pd.concat(dfs, ignore_index=True)
 
+        finalDf.drop(columns=['key_0', 'title', 'lowerTitle'], inplace=True)
+        return finalDf
+    
+    @staticmethod
+    def getMatchingPaperInfoByCid(companyDf, cid):
+        """
+            Returns a df with all the matched papers info for the given cid
+        """
+        companies = DataCleaner.getCompaniesFromCid(companyDf, cid)
+        paperFromCompanyRepos = Extractor.loadCSVFromOutput(companies)
+        dfByCid = DataCleaner.getDfByCidAndYear(companyDf, cid)
+        matchedPapersDf = DataCleaner.getMatchedPapers(dfByCid, paperFromCompanyRepos)
+
+        
+        return matchedPapersDf
     @staticmethod
     def getInfoDfFromCidAndYear(companyDf):
         cids = DataCleaner.getUniqueCids(companyDf)
