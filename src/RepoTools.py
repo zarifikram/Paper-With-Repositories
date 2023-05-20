@@ -167,7 +167,7 @@ class RepoTools:
     
     @staticmethod
     def getPaperTitlesFromReadme(readme):
-        title_patterns = [r'[^k]title\s*=\s*{\s*(.*)\s*}', r'[^k]title\s*=\s*"\s*(.*)\s*"']
+        title_patterns = [r'[^k][tT]itle\s*=\s*{\s*(.*)\s*}', r'[^k][tT]itle\s*=\s*"\s*(.*)\s*"']
         paperTitles = []
         for title_pattern in title_patterns:
                 titles = re.findall(title_pattern, readme)

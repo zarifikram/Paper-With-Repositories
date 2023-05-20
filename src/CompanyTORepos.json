@@ -157,7 +157,7 @@
     },
     {
         "company": "Amazon",
-        "repos": ["amzn"]
+        "repos": ["amzn", "amazon-research"]
     },
     {
         "company": "Amdocs Development Limited",
