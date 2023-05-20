@@ -16,6 +16,7 @@ class Extractor:
         for companyToRepos in config:
             Extractor.getCompanyDF(companyToRepos)
             
+        
 
     @staticmethod
     def getConfig():
@@ -99,7 +100,7 @@ class Extractor:
         return RepoTools.getPaperDfFromExtendedRepoWithReadmesAndData(extendedData, ignoreArxivIfPaperTitleExists = False)
     
     @staticmethod
-    def getRepoFromCompanies(companies):
+    def getRepoFromCompanies(companies, ignoreNonUser = True):
 
         repos = []
         usernames = Extractor.getUsernamesFromCompanies(companies)
@@ -109,9 +110,20 @@ class Extractor:
             extendedData = RepoTools.loadPickle('extended_' + filename)
 
             repos.extend([_['repo'] for _ in extendedData])
-        
+
+        if ignoreNonUser: 
+        # print(f"Total repos: {len(repos)}")
+            repos = [repo for repo in repos if Extractor.isRepoFromUsers(repo, usernames)]
+        # print(f"Total repos after filtering: {len(repos)}")
         return repos
 
+   
+    @staticmethod
+    def isRepoFromUsers(repo, usernames):
+        """
+            Returns true if the repo is from the given usernames
+        """
+        return repo.owner.login in usernames
     @staticmethod
     def getUsernamesFromCompanies(companies):
         usernames = []

@@ -240,6 +240,7 @@ class DataTools:
         outputPath = os.path.join(os.curdir, "../outputs")  
         return pd.read_csv(os.path.join(outputPath, f"{fileName}.csv"))
     
+    
     @staticmethod
     def getPaperGithubInBatches(paperTitles, companyName, batchSize = 1000):
         """
@@ -255,4 +256,7 @@ class DataTools:
             df = DataTools.getGithubLinkDfFromPaperTitlesList(batch)
             DataTools.saveDfInCSV(df, f"{companyName}_{i//batchSize}")
     
-    
+    @staticmethod
+    def isCSVExist(fileName):
+        outputPath = os.path.join(os.curdir, "../outputs")  
+        return os.path.exists(os.path.join(outputPath, f"{fileName}.csv"))
