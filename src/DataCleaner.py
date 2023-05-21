@@ -27,28 +27,30 @@ class DataCleaner:
             Returns a df with all the matched papers info
         """
         cids = DataCleaner.getUniqueCids(companyDf)
+        companies = []
         dfs = []
         for cid in tqdm(cids):
-            df = DataCleaner.getMatchingPaperInfoByCid(companyDf, cid)
-            dfs.append(df)
+            companies.extend(DataCleaner.getCompaniesFromCid(companyDf, cid))
+            
+        repoInfoByCid = DataTools.loadCSVFromOutput('repoList')
+        finalDf = DataCleaner.getMatchingPaperInfoByCid(companyDf, companies, repoInfoByCid)
         
-        finalDf = pd.concat(dfs, ignore_index=True)
-
+        # finalDf = pd.concat(dfs, ignore_index=True)
+        # finalDf = finalDf.drop_duplicates(['Title'])
         finalDf.drop(columns=['key_0', 'title', 'lowerTitle', 'stargazers_count', 'forks', 'open_issues_count'], inplace=True)
         return finalDf
     
     @staticmethod
-    def getMatchingPaperInfoByCid(companyDf, cid):
+    def getMatchingPaperInfoByCid(companyDf, companies, repoInfoByCid):
         """
             Returns a df with all the matched papers info for the given cid
         """
-        companies = DataCleaner.getCompaniesFromCid(companyDf, cid)
+
         paperFromCompanyRepos = Extractor.loadCSVFromOutput(companies)
-        dfByCid = DataCleaner.getDfByCidAndYear(companyDf, cid)
-        matchedPapersDf = DataCleaner.getMatchedPapers(dfByCid, paperFromCompanyRepos)
+        # will need work here TO-DO
+        matchedPapersDf = DataCleaner.getMatchedPapers(companyDf, paperFromCompanyRepos)
 
         # need to join matchedPaperDf with cid repos
-        repoInfoByCid = DataCleaner.getRepoInfoDfByCid(companyDf, cid, ignoreNonUser = False)
         repoInfoByCid['repo_link'] = 'https://github.com/' + repoInfoByCid['Full Name']
         # print(matchedPapersDf)
         merged_data = matchedPapersDf.merge(repoInfoByCid, how='left', on = 'repo_link')
@@ -59,29 +61,29 @@ class DataCleaner:
         cids = DataCleaner.getUniqueCids(companyDf)
         years = DataCleaner.getUniqueYears(companyDf)
         dfs = []
+        matchedPapersDf = DataTools.loadCSVFromOutput('finalStuff/matched_papersV2')
         for cid in tqdm(cids):
-            df = DataCleaner.analyzeByCid(companyDf, cid, years)
+            df = DataCleaner.analyzeByCid(companyDf, matchedPapersDf, cid, years)
             dfs.append(df)
         
         finalDf = pd.concat(dfs)
         return finalDf
 
     @staticmethod
-    def analyzeByCid(companyDf, cid, years):
+    def analyzeByCid(companyDf, matchedPapersDf, cid, years):
         """
             Analyzes the given cid for the given years
         """
         cidYearDicts = []
-        companies = DataCleaner.getCompaniesFromCid(companyDf, cid)
-        paperFromCompanyRepos = Extractor.loadCSVFromOutput(companies)
         dfByCid = DataCleaner.getDfByCidAndYear(companyDf, cid)
         repoInfoByCid = DataCleaner.getRepoInfoDfByCid(companyDf, cid, ignoreNonUser = True)
-        matchedPapersDf = DataCleaner.getMatchedPapers(dfByCid, paperFromCompanyRepos)
-        matchedRepoInfoByCid = DataCleaner.getMatchedRepoInfo(repoInfoByCid, matchedPapersDf)
+
+        matchedPapersDfByCid = DataCleaner.getMatchedPaperByCid(cid, matchedPapersDf)
         for year in years:
-            nMatchPapersByCidInYear = DataCleaner.getNumberOfRowsByYear(matchedPapersDf, year)
+            nMatchPapersByCidInYear = DataCleaner.getNumberOfRowsByYear(matchedPapersDfByCid, year)
             repoTotalInfoinYear = DataCleaner.getRepoInfoInYear(repoInfoByCid, year)
-            matchedRepoTotalInfoinYear = DataCleaner.getRepoInfoInYear(matchedRepoInfoByCid, year, matched = True)
+            
+            matchedRepoTotalInfoinYear = DataCleaner.getRepoInfoFromMatchedPapersDf(matchedPapersDfByCid, year)
             nPapersInTheYear = DataCleaner.getNumberOfRowsByYear(dfByCid, year)
             cidYearDict = {"CID": cid, "Year": year, "MatchedPapers": nMatchPapersByCidInYear, "TotalPapers": nPapersInTheYear}
             cidYearDict.update(repoTotalInfoinYear)
@@ -90,9 +92,8 @@ class DataCleaner:
         return pd.DataFrame(cidYearDicts)
 
     @staticmethod
-    def getMatchedRepoInfo(repoInfoByCid, matchedPaperDf):
-        repoNames = list(matchedPaperDf.name.unique())
-        return repoInfoByCid[repoInfoByCid['Full Name'].str.contains('|'.join(repoNames))]
+    def getMatchedPaperByCid(cid, matchedPaperDf):
+        return matchedPaperDf[matchedPaperDf.CID == cid]
     
     @staticmethod
     def getRepoInfoInYear(df, year, matched = False):
@@ -107,6 +108,22 @@ class DataCleaner:
                 matchedRepoInfo['Matched ' + key] = value
             return matchedRepoInfo
         return totalRepoInfo
+    
+    @staticmethod
+    def getRepoInfoFromMatchedPapersDf(df, year):
+        df = df[df.YearCreated == year]
+        matchedRepoInfo = {
+            'Matched Forks' : df.Forks.sum(), 
+            'Matched Stars' : df.Stars.sum(),
+            'Matched Watchers': df.Watchers.sum(), 
+            'Matched Commits': df.Commits.sum(), 
+            'Matched Branches': df.Branches.sum(),
+            'Matched Contributors': df.Contributors.sum(), 
+            'Matched Open Issues':  df['Open Issues'].sum(), 
+            'Matched PullRequests': df.PullRequests.sum(),
+            'Matched Repos Created': len(df)
+        }
+        return matchedRepoInfo
     
     @staticmethod
     def repoInfoCreatedInTheYear(repos, year):
@@ -351,3 +368,23 @@ class DataCleaner:
             pullRequests = math.nan
 
         return {"Full Name": repo.full_name ,"Forks": repo.forks_count, "Stars": repo.stargazers_count, "Watchers": repo.watchers_count, "Commits": commits, "Branches": branches, "Contributors": contributors, "Open Issues": repo.open_issues_count, "PullRequests": pullRequests, "YearCreated": repo.created_at.year}
+
+
+    @staticmethod
+    def getRepoInfoAllCID(companyDf):
+        cids = DataCleaner.getUniqueCids(companyDf=companyDf)
+        dfs = []
+        for cid in tqdm(cids):
+            try:
+                repoInfoDf = DataTools.loadCSVFromOutput(str(int(cid)))
+            except pd.errors.EmptyDataError:
+                columns = ['Full Name','Forks','Stars','Watchers','Commits','Branches','Contributors','Open Issues','PullRequests','YearCreated']
+                repoInfoDf = pd.DataFrame(columns=columns)
+
+            dfs.append(repoInfoDf)
+
+        bigDf = pd.concat(dfs, ignore_index=True)
+        bigDf.drop_duplicates(['Full Name'])
+        bigDf.fillna(0)
+        DataTools.saveDfInCSV(bigDf, 'repoList')
+    
