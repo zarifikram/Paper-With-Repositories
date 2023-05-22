@@ -157,7 +157,7 @@
     },
     {
         "company": "Amazon",
-        "repos": ["amzn", "amazon-research"]
+        "repos": ["amzn", "amazon-research", "amazon-science"]
     },
     {
         "company": "Amdocs Development Limited",
@@ -1009,7 +1009,7 @@
     },
     {
         "company": "Intel Corporation",
-        "repos": ["intel", "intel-ai"]
+        "repos": ["intel", "intel-ai", "intellabs"]
     },
     {
         "company": "Intelligent Automation Inc",
@@ -1369,7 +1369,7 @@
     },
     {
         "company": "NVIDIA",
-        "repos": ["NVIDIA", "NVLabs"]
+        "repos": ["NVIDIA", "NVLabs", "nv-tlabs"]
     },
     {
         "company": "NXP Semiconductors",
@@ -2229,7 +2229,7 @@
     },
     {
         "company": "google",
-        "repos": ["google", "GoogleCloudPlatform", "google-research"]
+        "repos": ["google", "GoogleCloudPlatform", "google-research", "tensorflow", "google-research-datasets"]
     },
     {
         "company": "hellenic telecommunications",

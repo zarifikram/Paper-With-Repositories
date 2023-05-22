@@ -3,6 +3,7 @@ import os
 import time
 import pickle
 from typing import List
+import numpy as np
 import pandas as pd
 from requests import ConnectTimeout, ReadTimeout
 from urllib3 import HTTPSConnectionPool
@@ -11,6 +12,9 @@ from tqdm import tqdm
 from github import Repository
 from DataTools import DataTools
 from github.GithubException import GithubException, RateLimitExceededException
+from RepoTools import RepoTools
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 class DataCleaner:
     """
@@ -26,42 +30,116 @@ class DataCleaner:
         """
             Returns a df with all the matched papers info
         """
-        cids = DataCleaner.getUniqueCids(companyDf)
-        companies = []
-        dfs = []
-        for cid in tqdm(cids):
-            companies.extend(DataCleaner.getCompaniesFromCid(companyDf, cid))
-            
+         
         repoInfoByCid = DataTools.loadCSVFromOutput('repoList')
-        finalDf = DataCleaner.getMatchingPaperInfoByCid(companyDf, companies, repoInfoByCid)
+        finalDf = DataCleaner.getMatchingPaperInfoByCid(companyDf, repoInfoByCid)
         
         # finalDf = pd.concat(dfs, ignore_index=True)
         # finalDf = finalDf.drop_duplicates(['Title'])
-        finalDf.drop(columns=['key_0', 'title', 'lowerTitle', 'stargazers_count', 'forks', 'open_issues_count'], inplace=True)
+        finalDf.drop(columns=['lowerTitle', 'stargazers_count', 'forks', 'open_issues_count', 'Watchers'], inplace=True)
         return finalDf
     
     @staticmethod
-    def getMatchingPaperInfoByCid(companyDf, companies, repoInfoByCid):
+    def getMatchingPaperInfoByCid(companyDf, repoInfoByCid):
         """
             Returns a df with all the matched papers info for the given cid
+            args:
+                companyDf: the companyDf
+                companies: the companies to get the matched papers for
+                repoInfoByCid: the repoInfoByCid contains the repo info collected so far
         """
 
-        paperFromCompanyRepos = Extractor.loadCSVFromOutput(companies)
-        # will need work here TO-DO
-        matchedPapersDf = DataCleaner.getMatchedPapers(companyDf, paperFromCompanyRepos)
+        # all the papers we extracted from github
+        paperFromCompanyRepos = Extractor.loadCSVFromOutput(['allPapersCollectedDup'])
+        companyDf['lowerTitle'] = companyDf.Title.str.lower()
 
+
+        dfs = []
+        for cid in tqdm(DataCleaner.getUniqueCids(companyDf)):
+            companyDfFromCid = companyDf[companyDf.CID == cid].reset_index(drop = True)
+            usernames = DataCleaner.getUsernamesFromCid(companyDf, cid)
+            paperFromCompanyReposByCid = paperFromCompanyRepos[paperFromCompanyRepos.repo_link.str.contains('|'.join(usernames))].reset_index(drop = True)
+            if len(paperFromCompanyReposByCid) == 0 or len(companyDfFromCid) == 0:
+                continue
+            try: 
+                dfs.append(DataCleaner.join_dataframes_by_cosine_similarity(companyDfFromCid, paperFromCompanyReposByCid, 'lowerTitle', 'lowerTitle', 0.8))
+            except ValueError:
+                continue
+        matchedPapersDf = DataCleaner.join_dataframes_by_cosine_similarity(companyDf, paperFromCompanyRepos, 'lowerTitle', 'lowerTitle', 0.8)
+        dfs.append(matchedPapersDf)
+
+        matchedPapersDf = pd.concat(dfs, ignore_index=True)
         # need to join matchedPaperDf with cid repos
         repoInfoByCid['repo_link'] = 'https://github.com/' + repoInfoByCid['Full Name']
         # print(matchedPapersDf)
         merged_data = matchedPapersDf.merge(repoInfoByCid, how='left', on = 'repo_link')
  
+        # merged_data = merged_data.drop_duplicates(['Title'])
         return merged_data
+    
+    @staticmethod
+    def preprocess_data(data):
+    # Lowercase and strip the strings
+        return data.str.lower().str.strip()
+
+    @staticmethod
+    def join_dataframes_by_cosine_similarity(df1, df2, column1, column2, threshold, batch_size=1000):
+        # Preprocess the column data
+        df1[column1] = DataCleaner.preprocess_data(df1[column1])
+        df2[column2] = DataCleaner.preprocess_data(df2[column2])
+
+        # Create TF-IDF vectorizer
+        vectorizer = TfidfVectorizer()
+
+        # Create a list to store the matched batch dataframes
+        matched_dfs = []
+
+        # Process the data in batches
+        for i in tqdm(range(0, len(df1), batch_size)):
+            # Get the current batch of data
+            df1_batch = df1.iloc[i:i+batch_size]
+            
+            # Fit and transform the data for the current batch
+            tfidf_matrix1 = vectorizer.fit_transform(df1_batch[column1])
+            try:
+                tfidf_matrix2 = vectorizer.transform(df2[column2])
+            except ValueError:
+                print(df2[column2])
+                raise
+
+            # Compute cosine similarity for the current batch
+            similarity_matrix = cosine_similarity(tfidf_matrix1, tfidf_matrix2)
+
+            # Find matches for the current batch
+            batch_matches = []
+            for i, row in df1_batch.iterrows():
+                matches = similarity_matrix[i % batch_size] >= threshold
+                if matches.any():
+                    matched_df = df2[matches].copy()
+                    matched_df['lowerTitle'] = row[column1]
+                    matched_dfs.append(matched_df)
+
+        # Concatenate the matched batch dataframes into a single dataframe
+        joined_df = pd.concat(matched_dfs)
+
+        joined_df = joined_df.merge(df1, how='left', on = 'lowerTitle')
+        return joined_df
+
+    @staticmethod
+    def getUsernamesFromCid(companyDf, cid):
+        companies = DataCleaner.getCompaniesFromCid(companyDf, cid)
+        usernames = []
+        for company in companies:
+            usernames.extend(Extractor.getUsernamesFromCompanies(companies))
+        
+        return usernames
+    
     @staticmethod
     def getInfoDfFromCidAndYear(companyDf):
         cids = DataCleaner.getUniqueCids(companyDf)
         years = DataCleaner.getUniqueYears(companyDf)
         dfs = []
-        matchedPapersDf = DataTools.loadCSVFromOutput('finalStuff/matched_papersV2')
+        matchedPapersDf = DataTools.loadCSVFromOutput('finalStuff/matched_papersV3')
         for cid in tqdm(cids):
             df = DataCleaner.analyzeByCid(companyDf, matchedPapersDf, cid, years)
             dfs.append(df)
@@ -115,7 +193,6 @@ class DataCleaner:
         matchedRepoInfo = {
             'Matched Forks' : df.Forks.sum(), 
             'Matched Stars' : df.Stars.sum(),
-            'Matched Watchers': df.Watchers.sum(), 
             'Matched Commits': df.Commits.sum(), 
             'Matched Branches': df.Branches.sum(),
             'Matched Contributors': df.Contributors.sum(), 
@@ -369,7 +446,21 @@ class DataCleaner:
 
         return {"Full Name": repo.full_name ,"Forks": repo.forks_count, "Stars": repo.stargazers_count, "Watchers": repo.watchers_count, "Commits": commits, "Branches": branches, "Contributors": contributors, "Open Issues": repo.open_issues_count, "PullRequests": pullRequests, "YearCreated": repo.created_at.year}
 
-
+    @staticmethod
+    def appendRepoInfoByUsername(companyDf, username, company):
+        cid = DataCleaner.getCidFromCompany(companyDf, company)
+        filename = username + "RepoWithReadmes"
+        extendedData = RepoTools.loadPickle('extended_' + filename)
+        repos = [_['repo'] for _ in extendedData]
+        repoInfos = []
+        for repo in tqdm(repos):
+            repoInfos.append(DataCleaner.getRepoInfoFromRepo(repo))
+        
+        df = pd.DataFrame(repoInfos)
+        dfOld = DataTools.loadCSVFromOutput(str(int(cid)))
+        df = pd.concat([dfOld, df], ignore_index=True)
+        DataTools.saveDfInCSV(df, str(int(cid)))
+    
     @staticmethod
     def getRepoInfoAllCID(companyDf):
         cids = DataCleaner.getUniqueCids(companyDf=companyDf)
